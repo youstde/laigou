@@ -1,0 +1,56 @@
+.help {
+			margin-top: 0.2rem;
+		}
+		.help-name {
+			font-size: 0.3rem;
+			color: #333333;
+			height: 1.2rem;
+			line-height: 1.2rem;
+			position: relative;
+		}
+		.help-content {
+			font-size: 0.28rem;
+			color: #999999;
+			padding-bottom: 0.48rem;
+		}
+		.faq {
+			background-color: #FFFFFF;
+		}
+		.fixed {
+			margin-top: 0.2rem;
+			background-color: #FFFFFF;
+		}
+		.help ul li {
+			border-bottom: 1px solid #F5F5F5;
+			padding: 0 0.3rem;
+		}
+		.close-btn {
+      display: block;
+      width: 0.26rem;
+      height: 0.26rem;
+      overflow: hidden;
+      position: absolute;
+      bottom: 1.2rem;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      color: #CCC;
+    }
+    .close-btn::before, .close-btn::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      background: #CCC;
+      width: 100%;
+      height: 0.02rem;
+    }
+    .close-btn::before {
+      transform: rotate(45deg);
+    }
+    .close-btn::after {
+      transform: rotate(-45deg);
+    }
+    .down {
+    	transform: translateY(-50%) rotate(180deg);
+    }

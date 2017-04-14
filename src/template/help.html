@@ -1,0 +1,26 @@
+<html>
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" /> 
+  <title>常见问题</title>
+</head>  
+<body>
+	<div id="app" class="help">
+		<ul class="faq">
+			<li v-for="(item, index) in faq">
+				<p class="help-name">{{item.name}}<span class="close-btn" v-bind:class="{down: item.isShow}" @click="slide(item)"></span></p>
+				<p class="help-content" v-if="item.isShow">{{item.content}}</p>
+			</li>
+		</ul>
+		<ul class="fixed">
+			<li v-for="item in fixed" v-if="item.type !=='special'">
+				<p class="help-name">{{item.name}}<span class="close-btn" v-bind:class="{down: item.isShow}" @click="slide(item)"></span></p>
+				<p class="help-content" v-if="item.isShow">{{item.content}}</p>
+			</li>
+			<li v-else>
+				<p class="help-name">{{item.name}}<span style="float: right;">{{item.content}}</span></p>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

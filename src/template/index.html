@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>福利社</title>
+</head>
+<body>
+  <div id="app"></div>
+  <script type="text/javascript" charset="utf-8">
+    const _mtac = {};
+    function getQueryString (url, name) {
+      const reg = new RegExp('(^|\\?|&)' + name + '=([^&#]*)(\\s|&|#|$)','i');
+      if(reg.test(url)) return RegExp.$2.replace(/\+/g, ' ');
+    }
+    const appKey = getQueryString(location.href, 'appKey') || 'key_adbaitai';
+    const adTag = getQueryString(location.href, 'ADTAG') || '';
+    console.log('APPKEY:' + appKey + '\nADTAG:' + adTag);
+  </script>
+  <script type="text/javascript" src="https://g.alicdn.com/mtb/lib-applink/0.3.4/??callApp.js,linksdk.js?v=1840892972_22283"></script>
+
+  <script src="https://pingjs.qq.com/h5/stats.js?v2.0.2" name="MTAH5" sid="500413362" cid="500413369"></script>
+
+  <!--下面这个是错的统计script-->
+  <!-- <script src="https://pingjs.qq.com/h5/stats.js?v2.0.2" name="MTAH5" sid="500413361" cid="500413368"></script> -->
+
+  <script src="https://static.mlinks.cc/scripts/tracking/track.js"></script>
+  <script type="text/javascript">
+    mlinkTrack.config({tid:'MW-A381A381'})
+  </script>
+</body>
+</html>

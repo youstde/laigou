@@ -1,0 +1,854 @@
+{
+    "channelsRes": {
+        "success": true,
+        "code": 0,
+        "params": {
+            "appKey": "wifi",
+            "processor": "CHANNEL_SEARCH"
+        },
+        "data": [
+            {
+                "id": 1,
+                "operationType": 1,
+                "name": "首页"
+            }
+        ]
+    },
+    "channel1": {
+        "categorysRes": {
+            "success": true,
+            "code": 0,
+            "params": {
+                "ids": [],
+                "needStdCats": true,
+                "pid": "mm_121759376_21550077_72230383",
+                "processor": "CATEGORY_SEARCH"
+            },
+            "data": [
+                {
+                    "id": 5,
+                    "name": "女装",
+                    "iconUrl": "",
+                    "stdCats": [
+                        {
+                            "id": 1,
+                            "name": "毛呢外套",
+                            "weight": 0
+                        },
+                        {
+                            "id": 2,
+                            "name": "大码女装",
+                            "weight": 0
+                        },
+                        {
+                            "id": 3,
+                            "name": "中老年女装",
+                            "weight": 0
+                        },
+                        {
+                            "id": 4,
+                            "name": "马夹",
+                            "weight": 0
+                        },
+                        {
+                            "id": 5,
+                            "name": "毛衣",
+                            "weight": 0
+                        },
+                        {
+                            "id": 6,
+                            "name": "针织衫",
+                            "weight": 0
+                        },
+                        {
+                            "id": 7,
+                            "name": "羽绒服",
+                            "weight": 0
+                        },
+                        {
+                            "id": 8,
+                            "name": "棉衣/棉服",
+                            "weight": 0
+                        },
+                        {
+                            "id": 9,
+                            "name": "衬衫",
+                            "weight": 0
+                        },
+                        {
+                            "id": 10,
+                            "name": "卫衣",
+                            "weight": 0
+                        },
+                        {
+                            "id": 11,
+                            "name": "短外套",
+                            "weight": 0
+                        },
+                        {
+                            "id": 12,
+                            "name": "雪纺衫/蕾丝衫",
+                            "weight": 0
+                        },
+                        {
+                            "id": 13,
+                            "name": "T恤",
+                            "weight": 0
+                        },
+                        {
+                            "id": 14,
+                            "name": "裤子",
+                            "weight": 0
+                        },
+                        {
+                            "id": 15,
+                            "name": "半身裙",
+                            "weight": 0
+                        },
+                        {
+                            "id": 16,
+                            "name": "连衣裙",
+                            "weight": 0
+                        },
+                        {
+                            "id": 17,
+                            "name": "背心吊带抹胸",
+                            "weight": 0
+                        },
+                        {
+                            "id": 18,
+                            "name": "风衣",
+                            "weight": 0
+                        },
+                        {
+                            "id": 19,
+                            "name": "套装",
+                            "weight": 0
+                        },
+                        {
+                            "id": 20,
+                            "name": "西装",
+                            "weight": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 23,
+                    "name": "其他",
+                    "iconUrl": "",
+                    "stdCats": [
+                        {
+                            "id": 129,
+                            "name": "智能设备",
+                            "iconUrl": "",
+                            "weight": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 22,
+                    "name": "手表 ",
+                    "iconUrl": "",
+                    "stdCats": [
+                        {
+                            "id": 127,
+                            "name": "国产腕表",
+                            "iconUrl": "",
+                            "weight": 999
+                        },
+                        {
+                            "id": 128,
+                            "name": "智能手表",
+                            "iconUrl": "",
+                            "weight": 999
+                        }
+                    ]
+                },
+                {
+                    "id": 20,
+                    "name": "宠物/宠物食品及用品",
+                    "iconUrl": "",
+                    "stdCats": [
+                        {
+                            "id": 126,
+                            "name": "猫/狗日用品",
+                            "iconUrl": "",
+                            "weight": 999
+                        }
+                    ]
+                },
+                {
+                    "id": 19,
+                    "name": "食品",
+                    "iconUrl": "",
+                    "stdCats": [
+                        {
+                            "id": 131,
+                            "name": "零食/坚果/特产",
+                            "iconUrl": "",
+                            "weight": 0
+                        },
+                        {
+                            "id": 135,
+                            "name": "茶",
+                            "iconUrl": "",
+                            "weight": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 18,
+                    "name": "美妆",
+                    "iconUrl": "",
+                    "stdCats": [
+                        {
+                            "id": 121,
+                            "name": "彩妆/香水/美妆工具",
+                            "iconUrl": "",
+                            "weight": 0
+                        },
+                        {
+                            "id": 122,
+                            "name": "美容护肤/美体/精油",
+                            "iconUrl": "",
+                            "weight": 0
+                        },
+                        {
+                            "id": 123,
+                            "name": "美发/护发/假发",
+                            "iconUrl": "",
+                            "weight": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 17,
+                    "name": "母婴用品",
+                    "iconUrl": "",
+                    "stdCats": [
+                        {
+                            "id": 112,
+                            "name": "孕妇装/孕产妇用品/营养",
+                            "weight": 0
+                        },
+                        {
+                            "id": 113,
+                            "name": "奶粉/辅食/营养品/零食",
+                            "weight": 0
+                        },
+                        {
+                            "id": 114,
+                            "name": "尿片/洗护/喂哺/推车床 ",
+                            "weight": 0
+                        },
+                        {
+                            "id": 115,
+                            "name": "童装/婴儿装/亲子装",
+                            "weight": 0
+                        },
+                        {
+                            "id": 116,
+                            "name": "玩具/童车/益智/积木/模型",
+                            "weight": 0
+                        },
+                        {
+                            "id": 117,
+                            "name": "童鞋/婴儿鞋/亲子鞋",
+                            "weight": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 16,
+                    "name": "服饰配件",
+                    "iconUrl": "",
+                    "stdCats": [
+                        {
+                            "id": 108,
+                            "name": "围巾",
+                            "weight": 0
+                        },
+                        {
+                            "id": 109,
+                            "name": "帽子",
+                            "weight": 0
+                        },
+                        {
+                            "id": 110,
+                            "name": "太阳镜",
+                            "weight": 0
+                        },
+                        {
+                            "id": 111,
+                            "name": "皮带/腰带",
+                            "weight": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 15,
+                    "name": "家居",
+                    "iconUrl": "",
+                    "stdCats": [
+                        {
+                            "id": 101,
+                            "name": "收纳整理",
+                            "weight": 0
+                        },
+                        {
+                            "id": 102,
+                            "name": "厨房/烹饪用具",
+                            "weight": 0
+                        },
+                        {
+                            "id": 103,
+                            "name": "居家日用",
+                            "weight": 0
+                        },
+                        {
+                            "id": 104,
+                            "name": "家庭/个人清洁工具",
+                            "weight": 0
+                        },
+                        {
+                            "id": 105,
+                            "name": "洗护清洁剂/卫生巾/纸/香薰",
+                            "weight": 0
+                        },
+                        {
+                            "id": 106,
+                            "name": "床上用品",
+                            "weight": 0
+                        },
+                        {
+                            "id": 107,
+                            "name": "家装主材",
+                            "weight": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 14,
+                    "name": "情趣用品",
+                    "iconUrl": "",
+                    "stdCats": [
+                        {
+                            "id": 97,
+                            "name": "避孕套",
+                            "weight": 0
+                        },
+                        {
+                            "id": 98,
+                            "name": "按摩棒",
+                            "weight": 0
+                        },
+                        {
+                            "id": 99,
+                            "name": "情趣内衣",
+                            "weight": 0
+                        },
+                        {
+                            "id": 100,
+                            "name": "SM套件",
+                            "weight": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 13,
+                    "name": "文玩",
+                    "iconUrl": "",
+                    "stdCats": [
+                        {
+                            "id": 92,
+                            "name": "文具",
+                            "weight": 0
+                        },
+                        {
+                            "id": 93,
+                            "name": "书籍杂志",
+                            "weight": 0
+                        },
+                        {
+                            "id": 94,
+                            "name": "鲜花园艺",
+                            "weight": 0
+                        },
+                        {
+                            "id": 95,
+                            "name": "宠物用品",
+                            "weight": 0
+                        },
+                        {
+                            "id": 96,
+                            "name": "礼品袋/塑料袋",
+                            "weight": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 12,
+                    "name": "汽车",
+                    "iconUrl": "",
+                    "stdCats": [
+                        {
+                            "id": 91,
+                            "name": "汽车用品",
+                            "weight": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 11,
+                    "name": "家电",
+                    "iconUrl": "",
+                    "stdCats": [
+                        {
+                            "id": 67,
+                            "name": "电视",
+                            "weight": 0
+                        },
+                        {
+                            "id": 68,
+                            "name": "电饭煲",
+                            "weight": 0
+                        },
+                        {
+                            "id": 69,
+                            "name": "吸尘器",
+                            "weight": 0
+                        },
+                        {
+                            "id": 70,
+                            "name": "冰箱",
+                            "weight": 0
+                        },
+                        {
+                            "id": 71,
+                            "name": "热水器",
+                            "weight": 0
+                        },
+                        {
+                            "id": 72,
+                            "name": "空调",
+                            "weight": 0
+                        },
+                        {
+                            "id": 73,
+                            "name": "燃气灶",
+                            "weight": 0
+                        },
+                        {
+                            "id": 74,
+                            "name": "油烟机",
+                            "weight": 0
+                        },
+                        {
+                            "id": 75,
+                            "name": "豆浆机",
+                            "weight": 0
+                        },
+                        {
+                            "id": 76,
+                            "name": "电水壶",
+                            "weight": 0
+                        },
+                        {
+                            "id": 77,
+                            "name": "微波炉",
+                            "weight": 0
+                        },
+                        {
+                            "id": 78,
+                            "name": "饮水机",
+                            "weight": 0
+                        },
+                        {
+                            "id": 79,
+                            "name": "面包机",
+                            "weight": 0
+                        },
+                        {
+                            "id": 80,
+                            "name": "电磁炉",
+                            "weight": 0
+                        },
+                        {
+                            "id": 81,
+                            "name": "挂烫机",
+                            "weight": 0
+                        },
+                        {
+                            "id": 82,
+                            "name": "加湿器",
+                            "weight": 0
+                        },
+                        {
+                            "id": 83,
+                            "name": "扫地机",
+                            "weight": 0
+                        },
+                        {
+                            "id": 84,
+                            "name": "音响",
+                            "weight": 0
+                        },
+                        {
+                            "id": 85,
+                            "name": "电吹风",
+                            "weight": 0
+                        },
+                        {
+                            "id": 86,
+                            "name": "理发器",
+                            "weight": 0
+                        },
+                        {
+                            "id": 87,
+                            "name": "剃须刀",
+                            "weight": 0
+                        },
+                        {
+                            "id": 88,
+                            "name": "体重秤",
+                            "weight": 0
+                        },
+                        {
+                            "id": 89,
+                            "name": "麦克风/话筒",
+                            "weight": 0
+                        },
+                        {
+                            "id": 90,
+                            "name": "腰颈按摩枕/靠垫",
+                            "weight": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 10,
+                    "name": "数码",
+                    "iconUrl": "",
+                    "stdCats": [
+                        {
+                            "id": 59,
+                            "name": "手机",
+                            "weight": 0
+                        },
+                        {
+                            "id": 60,
+                            "name": "相机/DV",
+                            "weight": 0
+                        },
+                        {
+                            "id": 61,
+                            "name": "平板电脑",
+                            "weight": 0
+                        },
+                        {
+                            "id": 62,
+                            "name": "笔记本",
+                            "weight": 0
+                        },
+                        {
+                            "id": 63,
+                            "name": "电脑周边",
+                            "weight": 0
+                        },
+                        {
+                            "id": 64,
+                            "name": "打印机",
+                            "weight": 0
+                        },
+                        {
+                            "id": 65,
+                            "name": "路由器",
+                            "weight": 0
+                        },
+                        {
+                            "id": 66,
+                            "name": "手机配件",
+                            "weight": 0
+                        },
+                        {
+                            "id": 120,
+                            "name": "闹钟",
+                            "iconUrl": "",
+                            "weight": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 9,
+                    "name": "内衣",
+                    "iconUrl": "",
+                    "stdCats": [
+                        {
+                            "id": 52,
+                            "name": "文胸",
+                            "weight": 0
+                        },
+                        {
+                            "id": 53,
+                            "name": "三角裤",
+                            "weight": 0
+                        },
+                        {
+                            "id": 54,
+                            "name": "四角裤/平角裤",
+                            "weight": 0
+                        },
+                        {
+                            "id": 55,
+                            "name": "保暖内衣",
+                            "weight": 0
+                        },
+                        {
+                            "id": 56,
+                            "name": "睡衣",
+                            "weight": 0
+                        },
+                        {
+                            "id": 57,
+                            "name": "女袜",
+                            "weight": 0
+                        },
+                        {
+                            "id": 58,
+                            "name": "男袜",
+                            "weight": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 8,
+                    "name": "箱包",
+                    "iconUrl": "",
+                    "stdCats": [
+                        {
+                            "id": 44,
+                            "name": "单肩包",
+                            "weight": 0
+                        },
+                        {
+                            "id": 45,
+                            "name": "双肩包",
+                            "weight": 0
+                        },
+                        {
+                            "id": 46,
+                            "name": "钱包",
+                            "weight": 0
+                        },
+                        {
+                            "id": 47,
+                            "name": "手提包",
+                            "weight": 0
+                        },
+                        {
+                            "id": 48,
+                            "name": "斜挎包",
+                            "weight": 0
+                        },
+                        {
+                            "id": 49,
+                            "name": "卡片包",
+                            "weight": 0
+                        },
+                        {
+                            "id": 50,
+                            "name": "旅行箱",
+                            "weight": 0
+                        },
+                        {
+                            "id": 51,
+                            "name": "拉杆箱",
+                            "weight": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "name": "鞋类",
+                    "iconUrl": "",
+                    "stdCats": [
+                        {
+                            "id": 34,
+                            "name": "帆布鞋",
+                            "weight": 0
+                        },
+                        {
+                            "id": 35,
+                            "name": "高跟鞋",
+                            "weight": 0
+                        },
+                        {
+                            "id": 36,
+                            "name": "凉鞋",
+                            "weight": 0
+                        },
+                        {
+                            "id": 37,
+                            "name": "靴子",
+                            "weight": 0
+                        },
+                        {
+                            "id": 38,
+                            "name": "雨鞋/靴",
+                            "weight": 0
+                        },
+                        {
+                            "id": 39,
+                            "name": "休闲鞋",
+                            "weight": 0
+                        },
+                        {
+                            "id": 40,
+                            "name": "运动鞋",
+                            "weight": 0
+                        },
+                        {
+                            "id": 41,
+                            "name": "皮鞋",
+                            "weight": 0
+                        },
+                        {
+                            "id": 42,
+                            "name": "板鞋",
+                            "weight": 0
+                        },
+                        {
+                            "id": 43,
+                            "name": "增高鞋",
+                            "weight": 0
+                        },
+                        {
+                            "id": 118,
+                            "name": "拖鞋",
+                            "iconUrl": "",
+                            "weight": 0
+                        },
+                        {
+                            "id": 119,
+                            "name": "鞋垫",
+                            "iconUrl": "",
+                            "weight": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "name": "男装",
+                    "iconUrl": "",
+                    "stdCats": [
+                        {
+                            "id": 21,
+                            "name": "衬衫",
+                            "weight": 0
+                        },
+                        {
+                            "id": 22,
+                            "name": "风衣",
+                            "weight": 0
+                        },
+                        {
+                            "id": 23,
+                            "name": "西装",
+                            "weight": 0
+                        },
+                        {
+                            "id": 24,
+                            "name": "裤子",
+                            "weight": 0
+                        },
+                        {
+                            "id": 25,
+                            "name": "T恤",
+                            "weight": 0
+                        },
+                        {
+                            "id": 26,
+                            "name": "夹克",
+                            "weight": 0
+                        },
+                        {
+                            "id": 27,
+                            "name": "针织衫/毛衣",
+                            "weight": 0
+                        },
+                        {
+                            "id": 28,
+                            "name": "毛呢外套",
+                            "weight": 0
+                        },
+                        {
+                            "id": 29,
+                            "name": "羽绒服",
+                            "weight": 0
+                        },
+                        {
+                            "id": 30,
+                            "name": "棉衣/棉服",
+                            "weight": 0
+                        },
+                        {
+                            "id": 31,
+                            "name": "套装",
+                            "weight": 0
+                        },
+                        {
+                            "id": 32,
+                            "name": "大码男装",
+                            "weight": 0
+                        },
+                        {
+                            "id": 33,
+                            "name": "中老年男装",
+                            "weight": 0
+                        },
+                        {
+                            "id": 132,
+                            "name": "背心/马甲",
+                            "iconUrl": "",
+                            "weight": 0
+                        },
+                        {
+                            "id": 133,
+                            "name": "卫衣",
+                            "iconUrl": "",
+                            "weight": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 24,
+                    "name": "运动户外",
+                    "iconUrl": "",
+                    "stdCats": [
+                        {
+                            "id": 134,
+                            "name": "运动/瑜伽/健身/球迷用品",
+                            "iconUrl": "",
+                            "weight": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        "adsRes": {
+            "success": true,
+            "code": 0,
+            "params": {
+                "ids": [
+                    1,
+                    2,
+                    3
+                ],
+                "pid": "mm_121759376_21550077_72230383",
+                "processor": "AD_SEARCH"
+            },
+            "data": []
+        },
+        "channelId": 1
+    }
+}

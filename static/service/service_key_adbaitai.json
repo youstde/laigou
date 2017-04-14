@@ -1,0 +1,1632 @@
+{
+    "channelsRes": {
+        "success": true,
+        "code": 0,
+        "params": {
+            "appKey": "key_adbaitai",
+            "processor": "CHANNEL_SEARCH"
+        },
+        "data": [
+            {
+                "id": 1,
+                "operationType": 1,
+                "url": "",
+                "name": "首页"
+            },
+            {
+                "id": 6,
+                "operationType": 2,
+                "url": "https://www.baidu.com",
+                "name": "38女神节"
+            },
+            {
+                "id": 2,
+                "operationType": 2,
+                "url": "topic_promotionId=11&topicId=15&tpl=coupon",
+                "name": "低价专场"
+            },
+            {
+                "id": 3,
+                "operationType": 1,
+                "url": "",
+                "name": "女装精选"
+            },
+            {
+                "id": 4,
+                "operationType": 1,
+                "url": "",
+                "name": "居家百货"
+            },
+            {
+                "id": 5,
+                "operationType": 2,
+                "url": "topic_promotionId=11&topicId=11&tpl=coupon",
+                "name": "男士特权"
+            }
+        ]
+    },
+    "channel1": {
+        "categorysRes": {
+            "success": true,
+            "code": 0,
+            "params": {
+                "ids": [],
+                "needStdCats": false,
+                "pid": "mm_120426991_20642390_70036797",
+                "processor": "CATEGORY_SEARCH"
+            },
+            "data": [
+                {
+                    "id": 5,
+                    "name": "女装",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 23,
+                    "name": "其他",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 22,
+                    "name": "手表 ",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 20,
+                    "name": "宠物/宠物食品及用品",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 19,
+                    "name": "食品",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 18,
+                    "name": "美妆",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 17,
+                    "name": "母婴用品",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 16,
+                    "name": "服饰配件",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 15,
+                    "name": "家居",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 14,
+                    "name": "情趣用品",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 13,
+                    "name": "文玩",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 12,
+                    "name": "汽车",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 11,
+                    "name": "家电",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 10,
+                    "name": "数码",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 9,
+                    "name": "内衣",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 8,
+                    "name": "箱包",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 7,
+                    "name": "鞋类",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 6,
+                    "name": "男装",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 24,
+                    "name": "运动户外",
+                    "iconUrl": ""
+                }
+            ]
+        },
+        "adsRes": {
+            "success": true,
+            "code": 0,
+            "params": {
+                "ids": [
+                    6,
+                    11,
+                    12
+                ],
+                "pid": "mm_120426991_20642390_70036797",
+                "processor": "AD_SEARCH"
+            },
+            "data": [
+                {
+                    "id": 6,
+                    "title": "正点-上新-轮播",
+                    "type": 0,
+                    "banners": [
+                        {
+                            "id": 19,
+                            "title": "38女神节",
+                            "picUrl": "http://img.adbaitai.com/cow/2017/03/06/750w_240h_F154D1488795396_origin.png",
+                            "skipUrl": "topic_promotionId=12&topicId=20&tpl=lowPrice"
+                        },
+                        {
+                            "id": 12,
+                            "title": "男士专享-banner1",
+                            "picUrl": "http://img.adbaitai.com/cow/2017/03/06/750w_240h_A47471488784623_origin.png",
+                            "skipUrl": "topic_topicId=11&tpl=normal"
+                        },
+                        {
+                            "id": 13,
+                            "title": "厨房整理",
+                            "picUrl": "http://img.adbaitai.com/cow/2017/03/06/750w_240h_553AF1488785549_origin.png",
+                            "skipUrl": "topic_promotionId=11&topicId=4&tpl=normal"
+                        },
+                        {
+                            "id": 9,
+                            "title": "女装-复古牛仔",
+                            "picUrl": "http://img.adbaitai.com/cow/2017/03/06/749w_240h_FCE961488784236_origin.jpg",
+                            "skipUrl": "topic_topicId=8&tpl=normal"
+                        },
+                        {
+                            "id": 14,
+                            "title": "居家收纳必备品",
+                            "picUrl": "http://img.adbaitai.com/cow/2017/03/06/750w_240h_2B1061488785588_origin.png",
+                            "skipUrl": "topic_promotionId=11&topicId=3&tpl=normal"
+                        },
+                        {
+                            "id": 18,
+                            "title": "低价专场",
+                            "picUrl": "http://img.adbaitai.com/cow/2017/03/06/750w_240h_AD07F1488785921_origin.png",
+                            "skipUrl": "topic_promotionId=11&topicId=15&tpl=lowPrice"
+                        }
+                    ]
+                },
+                {
+                    "id": 11,
+                    "title": "首页-浮层",
+                    "type": 1,
+                    "banners": [
+                        {
+                            "id": 20,
+                            "title": "测试",
+                            "picUrl": "http://img.adbaitai.com/cow/2017/03/07/468w_694h_694E61488867453_origin.jpg",
+                            "skipUrl": "topic_promotionId=11&topicId=15&tpl=lowPrice"
+                        }
+                    ]
+                },
+                {
+                    "id": 12,
+                    "title": "首页-腰封",
+                    "type": 2,
+                    "banners": [
+                        {
+                            "id": 8,
+                            "title": "女装-春衣撩人",
+                            "picUrl": "http://img.adbaitai.com/cow/2017/03/06/750w_240h_970EE1488784073_origin.jpg",
+                            "skipUrl": "topic_topicId=10&tpl=normal"
+                        },
+                        {
+                            "id": 9,
+                            "title": "女装-复古牛仔",
+                            "picUrl": "http://img.adbaitai.com/cow/2017/03/06/749w_240h_FCE961488784236_origin.jpg",
+                            "skipUrl": "topic_topicId=8&tpl=normal"
+                        }
+                    ]
+                }
+            ]
+        },
+        "promotionRes": {
+            "success": true,
+            "code": 0,
+            "data": [
+                {
+                    "id": 7,
+                    "title": "首页商品",
+                    "bizs": [
+                        {
+                            "type": 2,
+                            "topic": {
+                                "id": 21,
+                                "name": "颜色测试",
+                                "title": "颜色测试",
+                                "frontType": 1,
+                                "innerBanerUrl": "",
+                                "outBanerUrl": "",
+                                "showRest": false,
+                                "offset": 0,
+                                "pageSize": 20,
+                                "count": 1,
+                                "backgroundColor": "#FFFFFF",
+                                "clockColor": "#FFFFE0",
+                                "msClockColor": "#FFFAFA"
+                            }
+                        },
+                        {
+                            "type": 2,
+                            "topic": {
+                                "id": 3,
+                                "name": "换季收纳专场",
+                                "title": "换季收纳专场",
+                                "frontType": 1,
+                                "innerBanerUrl": "http://img.adbaitai.com/cow/2017/03/08/600w_474h_B1CD71488962210_origin.jpg",
+                                "outBanerUrl": "http://img.adbaitai.com/cow/2017/03/08/600w_474h_B1CD71488962595_origin.jpg",
+                                "showRest": false,
+                                "offset": 0,
+                                "pageSize": 20,
+                                "count": 35
+                            }
+                        },
+                        {
+                            "type": 2,
+                            "topic": {
+                                "id": 4,
+                                "name": "厨房整理专场",
+                                "title": "厨房整理专场",
+                                "frontType": 2,
+                                "innerBanerUrl": "http://img.adbaitai.com/cow/2017/03/08/600w_474h_B1CD71488962236_origin.jpg",
+                                "outBanerUrl": "",
+                                "showRest": false,
+                                "item": {
+                                    "id": 521687853588,
+                                    "title": "水槽塑料沥水篮收纳挂篮 厨具置物架沥水架",
+                                    "saleCount": 73897,
+                                    "picUrl": "http://img.alicdn.com/bao/uploaded/i2/TB1Hrp9NFXXXXcpaXXXXXXXXXXX_!!0-item_pic.jpg",
+                                    "originPrice": "4.7",
+                                    "price": "2.5",
+                                    "source": "TB",
+                                    "status": 1,
+                                    "statusText": "在线",
+                                    "isNew": false,
+                                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF34AiQ6j2t7AqmWfB9kuf7fAZJUTXhNJ3rtIYH0oWb1Mstw0jc6Ka2nAI7PDh0Z4afF2JkuHOZwDmi9bhZAIsOmW8zvdMlYdiwIpDFej5vc69g%3D%3D",
+                                    "isHasActivity": false,
+                                    "isPinkage": true,
+                                    "isPopular": true
+                                },
+                                "offset": 0,
+                                "pageSize": 20,
+                                "count": 17
+                            }
+                        },
+                        {
+                            "type": 1,
+                            "item": {
+                                "id": 536455589643,
+                                "title": "圆领纯棉日系印花短袖T恤",
+                                "saleCount": 22627,
+                                "picUrl": "http://img.alicdn.com/bao/uploaded/i2/TB1skDUKXXXXXb8XXXXXXXXXXXX_!!0-item_pic.jpg",
+                                "originPrice": "138",
+                                "price": "16.9",
+                                "source": "TM",
+                                "status": 1,
+                                "statusText": "在线",
+                                "isNew": false,
+                                "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE4hATUsfwUDkaq6CAhg7EXVwwm0IwqIRKS",
+                                "isHasActivity": false,
+                                "isPinkage": true,
+                                "isPopular": true
+                            }
+                        },
+                        {
+                            "type": 1,
+                            "item": {
+                                "id": 524543059575,
+                                "title": "小米苹果华为乐视手机数据线充电器",
+                                "saleCount": 25721,
+                                "picUrl": "http://img.alicdn.com/bao/uploaded/i3/TB1cMwVPpXXXXX5XpXXXXXXXXXX_!!0-item_pic.jpg",
+                                "originPrice": "10",
+                                "price": "9.9",
+                                "source": "TM",
+                                "status": 1,
+                                "statusText": "在线",
+                                "isNew": false,
+                                "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE4hAglaXKZI78rpvyCft5XxnIFWBj3Vyh8",
+                                "isHasActivity": false,
+                                "isPinkage": true,
+                                "isPopular": true
+                            }
+                        },
+                        {
+                            "type": 1,
+                            "item": {
+                                "id": 543467055832,
+                                "title": "苹果6背夹充电宝",
+                                "saleCount": 41241,
+                                "picUrl": "http://img.alicdn.com/bao/uploaded/i4/TB14f9JPVXXXXbgXpXXXXXXXXXX_!!0-item_pic.jpg",
+                                "originPrice": "148",
+                                "price": "99.9",
+                                "source": "TM",
+                                "status": 1,
+                                "statusText": "在线",
+                                "isNew": false,
+                                "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE7W53BDKzOfRX0hgp%2F%2FRwzCnV8NYLE6QhV",
+                                "isHasActivity": false,
+                                "isPinkage": true,
+                                "isPopular": true
+                            }
+                        },
+                        {
+                            "type": 1,
+                            "item": {
+                                "id": 545113680210,
+                                "title": "男士短袖圆领印花t恤",
+                                "saleCount": 39651,
+                                "picUrl": "http://img.alicdn.com/bao/uploaded/i2/TB1ibk3PpXXXXbhXpXXXXXXXXXX_!!0-item_pic.jpg",
+                                "originPrice": "199",
+                                "price": "68.8",
+                                "source": "TM",
+                                "status": 1,
+                                "statusText": "在线",
+                                "isNew": false,
+                                "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE4hACfMzO%2BdzH9OQSzwn6j8Q6FsTGwwFRv",
+                                "isHasActivity": false,
+                                "isPinkage": true,
+                                "isPopular": true
+                            }
+                        },
+                        {
+                            "type": 1,
+                            "item": {
+                                "id": 531282871265,
+                                "title": "iphone充电器",
+                                "saleCount": 51303,
+                                "picUrl": "http://img.adbaitai.com/cow/2017/03/01/500w_500h_841531488359551_origin.png",
+                                "originPrice": "98",
+                                "price": "15",
+                                "source": "TM",
+                                "status": 1,
+                                "statusText": "在线",
+                                "isNew": false,
+                                "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE4hAaa3H7z0NCAIPXjge1YhckVaYBwRkv2",
+                                "isHasActivity": false,
+                                "isPinkage": true,
+                                "isPopular": true
+                            }
+                        },
+                        {
+                            "type": 1,
+                            "item": {
+                                "id": 525939833834,
+                                "title": "多功能磁吸式车载手机吸盘式支架",
+                                "saleCount": 74235,
+                                "picUrl": "http://img.alicdn.com/bao/uploaded/i2/TB1ArcwNVXXXXcIXVXXXXXXXXXX_!!0-item_pic.jpg",
+                                "originPrice": "99",
+                                "price": "9.9",
+                                "source": "TM",
+                                "status": 1,
+                                "statusText": "在线",
+                                "isNew": false,
+                                "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE7Wjx6aTWHG8qsfeXG2vnHymEtxM%2FA7iAz",
+                                "isHasActivity": false,
+                                "isPinkage": true,
+                                "isPopular": true
+                            }
+                        },
+                        {
+                            "type": 1,
+                            "item": {
+                                "id": 541949669363,
+                                "title": "苹果耳机入耳式带麦重低音电脑耳塞",
+                                "saleCount": 138618,
+                                "picUrl": "http://img1.tbcdn.cn/tfscom/i3/1907130988/TB2QWbzXS0mpuFjSZPiXXbssVXa_!!1907130988.jpg",
+                                "originPrice": "20",
+                                "price": "15",
+                                "source": "TM",
+                                "status": 1,
+                                "statusText": "在线",
+                                "isNew": false,
+                                "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE7WjVOlt5mFVD3iSzUH3rzAbobwx34J1HU",
+                                "isHasActivity": false,
+                                "isPinkage": true,
+                                "isPopular": true
+                            }
+                        },
+                        {
+                            "type": 1,
+                            "item": {
+                                "id": 540303404291,
+                                "title": "vivo手机壳步步高x7plus",
+                                "saleCount": 22956,
+                                "picUrl": "http://img.alicdn.com/bao/uploaded/i4/TB1Mn74PVXXXXb9XpXXXXXXXXXX_!!0-item_pic.jpg",
+                                "originPrice": "17",
+                                "price": "15",
+                                "source": "TM",
+                                "status": 1,
+                                "statusText": "在线",
+                                "isNew": false,
+                                "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE4hlk%2B0uAuvRAidkExz4LfKiwtu2MkPkiT",
+                                "isHasActivity": false,
+                                "isPinkage": true,
+                                "isPopular": true
+                            }
+                        },
+                        {
+                            "type": 1,
+                            "item": {
+                                "id": 42628683712,
+                                "title": "32夹可折叠多头成人晾衣架 塑料多挂衣架",
+                                "saleCount": 50912,
+                                "picUrl": "http://img.adbaitai.com/cow/2017/02/23/300w_300h_E9B151487833197_origin.jpg",
+                                "originPrice": "25",
+                                "price": "8.8",
+                                "source": "TM",
+                                "status": 1,
+                                "statusText": "在线",
+                                "isNew": false,
+                                "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE7VKHpXUjl%2FHrSTArWIJrUcTzN2vl24Lk%3D",
+                                "isHasActivity": false,
+                                "isPinkage": false,
+                                "isPopular": true
+                            }
+                        },
+                        {
+                            "type": 1,
+                            "item": {
+                                "id": 43474232153,
+                                "title": "毛呢大衣除尘刷子 去毛刷干洗刷床刷",
+                                "saleCount": 21580,
+                                "picUrl": "http://img.adbaitai.com/cow/2017/02/23/300w_300h_44D3A1487829421_origin.jpg",
+                                "originPrice": "7.8",
+                                "price": "7.8",
+                                "source": "TM",
+                                "status": 1,
+                                "statusText": "在线",
+                                "isNew": false,
+                                "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE4hYugisC%2FWWbAcCqEjTsiGz9sN51Bz6w%3D",
+                                "isHasActivity": false,
+                                "isPinkage": true,
+                                "isPopular": true
+                            }
+                        },
+                        {
+                            "type": 1,
+                            "item": {
+                                "id": 531011429753,
+                                "title": "吸盘浴室置物架 卫生间壁挂角架收纳架",
+                                "saleCount": 1330,
+                                "picUrl": "http://img.adbaitai.com/cow/2017/02/23/300w_300h_6C4851487830809_origin.jpg",
+                                "originPrice": "19.9",
+                                "price": "9.9",
+                                "source": "TM",
+                                "status": 1,
+                                "statusText": "在线",
+                                "isNew": false,
+                                "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE4hAaQYefnRdDieef5X%2FLrlxGgAoi2EjlM",
+                                "isHasActivity": false,
+                                "isPinkage": false,
+                                "isPopular": false
+                            }
+                        },
+                        {
+                            "type": 1,
+                            "item": {
+                                "id": 532707914542,
+                                "title": "厨房桌面置物架 客厅多层整理架浴室架",
+                                "saleCount": 5808,
+                                "picUrl": "http://img.alicdn.com/bao/uploaded/i3/50983440/TB25fN_pFXXXXaZXXXXXXXXXXXX_!!50983440.jpg",
+                                "originPrice": "7.2",
+                                "price": "5.9",
+                                "source": "TB",
+                                "status": 1,
+                                "statusText": "在线",
+                                "isNew": false,
+                                "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF34AiQ6j2t7AqmWfB9kuf7fAZJUTXhNJ3rtIYH0oWb1Mstw0jc6Ka2nAI7PDh0Z4afF2JkuHOZwDmi9bhZAIsOmW8zvdMlYcSRFT1gDTIWTKIg%3D%3D",
+                                "isHasActivity": false,
+                                "isPinkage": false,
+                                "isPopular": false
+                            }
+                        },
+                        {
+                            "type": 1,
+                            "item": {
+                                "id": 544575539954,
+                                "title": "韩版纯色百搭打底系带针织背心上衣",
+                                "saleCount": 204,
+                                "picUrl": "http://img3.tbcdn.cn/tfscom/i3/14075198/TB2bQnDdUhnpuFjSZFEXXX0PFXa_!!14075198.jpg",
+                                "originPrice": "18.8",
+                                "price": "18.8",
+                                "source": "TB",
+                                "status": 1,
+                                "statusText": "在线",
+                                "isNew": false,
+                                "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF34AiQ6j2t7AqmWfB9kuf7fAZJUTXhNJ3rtIYH0oWb1Mstw0jc6Ka2nAI7PDh0Z4afF2JkuHOZwDmi9ff9x3raMoXFHjb8JURYe2jyLpmB2hCA%3D%3D",
+                                "isHasActivity": false,
+                                "isPinkage": true,
+                                "isPopular": false
+                            }
+                        },
+                        {
+                            "type": 1,
+                            "item": {
+                                "id": 525731921296,
+                                "title": "高腰小脚显瘦九分女裤春秋外穿打底裤",
+                                "saleCount": 140054,
+                                "picUrl": "http://img.alicdn.com/bao/uploaded/i3/TB1mJDWPpXXXXXqXpXXXXXXXXXX_!!0-item_pic.jpg",
+                                "originPrice": "98",
+                                "price": "19.9",
+                                "source": "TM",
+                                "status": 1,
+                                "statusText": "在线",
+                                "isNew": false,
+                                "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE7VoOw%2BBtIBSsy2o6hSG15zwC3xXeMRVwg",
+                                "isHasActivity": false,
+                                "isPinkage": true,
+                                "isPopular": true
+                            }
+                        },
+                        {
+                            "type": 1,
+                            "item": {
+                                "id": 544506245964,
+                                "title": "韩版灯芯绒复古棒球服夹克",
+                                "saleCount": 13166,
+                                "picUrl": "http://img.alicdn.com/bao/uploaded/i1/1670163060/TB2bLiacYBkpuFjy1zkXXbSpFXa_!!1670163060.jpg",
+                                "originPrice": "34.8",
+                                "price": "29.8",
+                                "source": "TB",
+                                "status": 1,
+                                "statusText": "在线",
+                                "isNew": false,
+                                "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF34AiQ6j2t7AqmWfB9kuf7fAZJUTXhNJ3rtIYH0oWb1Mstw0jc6Ka2nAI7PDh0Z4afF2JkuHOZwDmi9ffbAI2YgAorONZSwnaiGwkZPR2MhEOq2z",
+                                "isHasActivity": false,
+                                "isPinkage": true,
+                                "isPopular": true
+                            }
+                        },
+                        {
+                            "type": 1,
+                            "item": {
+                                "id": 543860821799,
+                                "title": "原宿复古宽松破洞做旧牛仔外套",
+                                "saleCount": 8493,
+                                "picUrl": "http://img.alicdn.com/bao/uploaded/i2/2986695006/TB2Da2Wb4hmpuFjSZFyXXcLdFXa_!!2986695006.jpg",
+                                "originPrice": "29.9",
+                                "price": "29.9",
+                                "source": "TB",
+                                "status": 1,
+                                "statusText": "在线",
+                                "isNew": false,
+                                "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF34AiQ6j2t7AqmWfB9kuf7fAZJUTXhNJ3rtIYH0oWb1Mstw0jc6Ka2nAI7PDh0Z4afF2JkuHOZwDmi9c20ycGkTnrtmfILy%2BCuH3J%2BPs1lBPHdc%2F",
+                                "isHasActivity": false,
+                                "isPinkage": true,
+                                "isPopular": true
+                            }
+                        },
+                        {
+                            "type": 1,
+                            "item": {
+                                "id": 527231609692,
+                                "title": "长袖加绒加厚高领蕾丝打底衫网纱上衣",
+                                "saleCount": 556,
+                                "picUrl": "http://img.adbaitai.com/cow/2017/03/02/500w_500h_161A41488425963_origin.png",
+                                "originPrice": "130",
+                                "price": "15.8",
+                                "source": "TB",
+                                "status": 1,
+                                "statusText": "在线",
+                                "isNew": false,
+                                "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF34AiQ6j2t7AqmWfB9kuf7fAZJUTXhNJ3rtIYH0oWb1Mstw0jc6Ka2nAI7PDh0Z4afF2JkuHOZwDmi9bhPqFXQ9qTdwU2iZjJDwT634nDmwga%2Bw%3D",
+                                "isHasActivity": false,
+                                "isPinkage": true,
+                                "isPopular": false
+                            }
+                        }
+                    ],
+                    "offset": 0,
+                    "pageSize": 20,
+                    "count": 701
+                }
+            ]
+        },
+        "channelId": 1
+    },
+    "channel3": {
+        "categorysRes": {
+            "success": true,
+            "code": 0,
+            "params": {
+                "ids": [],
+                "needStdCats": false,
+                "pid": "mm_120426991_20642390_70036797",
+                "processor": "CATEGORY_SEARCH"
+            },
+            "data": [
+                {
+                    "id": 5,
+                    "name": "女装",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 23,
+                    "name": "其他",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 22,
+                    "name": "手表 ",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 20,
+                    "name": "宠物/宠物食品及用品",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 19,
+                    "name": "食品",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 18,
+                    "name": "美妆",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 17,
+                    "name": "母婴用品",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 16,
+                    "name": "服饰配件",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 15,
+                    "name": "家居",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 14,
+                    "name": "情趣用品",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 13,
+                    "name": "文玩",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 12,
+                    "name": "汽车",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 11,
+                    "name": "家电",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 10,
+                    "name": "数码",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 9,
+                    "name": "内衣",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 8,
+                    "name": "箱包",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 7,
+                    "name": "鞋类",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 6,
+                    "name": "男装",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 24,
+                    "name": "运动户外",
+                    "iconUrl": ""
+                }
+            ]
+        },
+        "adsRes": {
+            "success": true,
+            "code": 0,
+            "params": {
+                "ids": [
+                    7
+                ],
+                "pid": "mm_120426991_20642390_70036797",
+                "processor": "AD_SEARCH"
+            },
+            "data": [
+                {
+                    "id": 7,
+                    "title": "女装",
+                    "type": 0,
+                    "banners": [
+                        {
+                            "id": 9,
+                            "title": "女装-复古牛仔",
+                            "picUrl": "http://img.adbaitai.com/cow/2017/03/06/749w_240h_FCE961488784236_origin.jpg",
+                            "skipUrl": "topic_topicId=8&tpl=normal"
+                        },
+                        {
+                            "id": 8,
+                            "title": "女装-春衣撩人",
+                            "picUrl": "http://img.adbaitai.com/cow/2017/03/06/750w_240h_970EE1488784073_origin.jpg",
+                            "skipUrl": "topic_topicId=10&tpl=normal"
+                        },
+                        {
+                            "id": 10,
+                            "title": "女装-女装换季",
+                            "picUrl": "http://img.adbaitai.com/cow/2017/03/06/750w_240h_328F11488784359_origin.png",
+                            "skipUrl": "topic_topicId=9&tpl=normal"
+                        },
+                        {
+                            "id": 11,
+                            "title": "女装-开学换新",
+                            "picUrl": "http://img.adbaitai.com/cow/2017/03/06/750w_240h_58FEB1488784373_origin.jpg",
+                            "skipUrl": "topic_topicId=7&tpl=normal"
+                        }
+                    ]
+                }
+            ]
+        },
+        "itemsByCatRes": {
+            "success": true,
+            "code": 0,
+            "params": {
+                "catIds": [
+                    5
+                ],
+                "offset": 0,
+                "pageSize": 20,
+                "pid": "mm_120426991_20642390_70036797",
+                "processor": "ITEM_SEARCH_BY_CATEGORY"
+            },
+            "data": [
+                {
+                    "id": 521748590119,
+                    "title": "南极人高腰小脚打底裤",
+                    "saleCount": 223063,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i3/TB1DV07MpXXXXa9XXXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "138",
+                    "price": "24.9",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE4hl0uWPndHzaI50TTcDQ1edUMziYA2ziA",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 521970368186,
+                    "title": "打底裤小脚百搭显瘦",
+                    "saleCount": 161981,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i1/TB1fWcNNVXXXXc6XVXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "98",
+                    "price": "16.9",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE4hAF74fC4oLbPiZi0BG2XGCzQnDQ5Mv89",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 525731921296,
+                    "title": "高腰小脚显瘦九分女裤春秋外穿打底裤",
+                    "saleCount": 140054,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i3/TB1mJDWPpXXXXXqXpXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "98",
+                    "price": "19.9",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE7VoOw%2BBtIBSsy2o6hSG15zwC3xXeMRVwg",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 544636633622,
+                    "title": "南极人2016新款春季打底裤女外穿薄款春秋九分黑韩版百搭显瘦小脚",
+                    "saleCount": 137412,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i3/318913797/TB2pQ9bdYJmpuFjSZFwXXaE4VXa_!!318913797.jpg",
+                    "originPrice": "99",
+                    "price": "39.8",
+                    "source": "TB",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF34AiQ6j2t7AqmWfB9kuf7fAZJUTXhNJ3rtIYH0oWb1Mstw0jc6Ka2nAI7PDh0Z4afF2JkuHOZwDmi9dpBEYXoltBszcHU1OcDj8mLP4kbVWZBo%3D",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 544145512120,
+                    "title": "春秋打底裤高腰小脚韩版九分不加绒女裤春季显瘦黑色长裤外穿薄款",
+                    "saleCount": 122963,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i2/TB1OpR.PpXXXXatXFXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "55",
+                    "price": "29.9",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE7VoOw%2BBtIBSsy2o6hSGvWZC%2B06WUUaxsd",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 527919033087,
+                    "title": "韩版春季秋外穿不加绒黑小脚打底裤",
+                    "saleCount": 106073,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i2/TB1WIOoLVXXXXXfaXXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "48",
+                    "price": "24.9",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE4gJ2jBfmzwkenMwHdhzrwLk14F6zJnaE5",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 521645721686,
+                    "title": "黑色小脚裤牛仔打底裤",
+                    "saleCount": 101501,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i2/TB1AiKFLpXXXXcZXXXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "129",
+                    "price": "29.9",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE4hYDGmPgcEfwQXQZ5IhMSA%2FIblgSeU1Dm",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 44344776190,
+                    "title": "南极人薄款九分打底裤",
+                    "saleCount": 94550,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i3/TB1yFkSKVXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "138",
+                    "price": "24.9",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE4gJvxmIpch1JQxuMD4WgBupkh4KpCzd4%3D",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 545415151064,
+                    "title": "韩版高腰打底裤外穿女黑色百搭春季2016新款小脚九分女裤紧身薄款",
+                    "saleCount": 87068,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i2/TB1ZOrePFXXXXcPapXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "98",
+                    "price": "38.9",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiEzhKdCL0JRziMYcsrP%2BO2olTJMPp%2BZhzc%3D",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 536342438475,
+                    "title": "白色长袖修身打底衫短款紧身纯色t恤",
+                    "saleCount": 58835,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i1/TB18bE4PpXXXXa5XXXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "69",
+                    "price": "12.9",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE7WjIyTvAhFrRCbDDn7FejX7RShBS3KOuI",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 543849503328,
+                    "title": "高腰牛仔裤九分裤烟灰色显瘦铅笔裤",
+                    "saleCount": 55422,
+                    "picUrl": "http://img4.tbcdn.cn/tfscom/i4/TB1Cn6kOVXXXXcxaXXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "96",
+                    "price": "69",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE4hl%2B9h4jsVjGqq5oq7zFMh4qq3so23l%2FR",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 522756199937,
+                    "title": "长袖正装工装白衬衫",
+                    "saleCount": 53550,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i4/TB1f7LENXXXXXbVaXXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "199",
+                    "price": "27",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE4hwaYMFvCz%2FHop0zLwQRJ0Em3F6g4zN0W",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 536302361311,
+                    "title": "韩版高腰牛仔裤加绒铅笔裤",
+                    "saleCount": 51068,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i4/TB19LXWLXXXXXXRapXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "128",
+                    "price": "49.9",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE9iAV70Pp%2FVAJGMJD0MAzgsrQzmO9mLmU%3D",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 535054508010,
+                    "title": "无袖针织小吊带背心短款打底衫",
+                    "saleCount": 47823,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i4/TB13dHyOVXXXXXoXFXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "18.9",
+                    "price": "9.9",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE7Wjf0olKknpmfGv4ODpMf%2Fnhahr5AiHy4",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 544104366922,
+                    "title": "内搭性感镂空网格透视网纱蕾丝小衫",
+                    "saleCount": 46833,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i1/279951700/TB2HPVicHBmpuFjSZFuXXaG_XXa_!!279951700.jpg",
+                    "originPrice": "19.8",
+                    "price": "19.8",
+                    "source": "TB",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF34AiQ6j2t7AqmWfB9kuf7fAZJUTXhNJ3rtIYH0oWb1Mstw0jc6Ka2nAI7PDh0Z4afF2JkuHOZwDmi9c1SnJ6cazbyc8QS5pSCc%2Frv%2FHmtq%2Fg7U%3D",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 542094166623,
+                    "title": "南极人刺绣纯棉衬衫",
+                    "saleCount": 46364,
+                    "picUrl": "http://img4.tbcdn.cn/tfscom/i2/407456643/TB2sHhnegCN.eBjSZFoXXXj0FXa_!!407456643.jpg",
+                    "originPrice": "199",
+                    "price": "39",
+                    "source": "TB",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF34AiQ6j2t7AqmWfB9kuf7fAZJUTXhNJ3rtIYH0oWb1Mstw0jc6Ka2nAI7PDh0Z4afF2JkuHOZwDmi9aFCKIWJRoAI15xEmIpA8AMylgJKCQX5Q%3D",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 524807284687,
+                    "title": "纯色棉质圆领短袖t恤修身白色大码打底衫",
+                    "saleCount": 42333,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i2/TB1I5e.LpXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "76",
+                    "price": "39.9",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE4hloFF0jlVFvDiqcke3mDVpA%2ByHa4HFME",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 544593334904,
+                    "title": "漫娜儿2017春装新款韩范雪纺衬衫女长袖白色时尚衬衣宽松女装上衣",
+                    "saleCount": 39102,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i1/TB10iA1PXXXXXbyXVXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "108",
+                    "price": "29.9",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE4hAnI0zm5VJ%2BqIRCp2NiREMuvGzj%2Fm%2BBI",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 530806013094,
+                    "title": "春秋雪纺哈伦裤 韩版学生九分裤",
+                    "saleCount": 38973,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i3/TB1gCXkKXXXXXb0XpXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "100",
+                    "price": "26.8",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE7VWgeQJWieL1pRHw8TJBTxEd9%2BRrM5KlW",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 40116639349,
+                    "title": "纯棉加绒长袖打底黑色圆领修身纯色t恤",
+                    "saleCount": 38031,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i5/TB13GglNXXXXXXPXFXXYXGcGpXX_M2.SS2",
+                    "originPrice": "79",
+                    "price": "18.8",
+                    "source": "TB",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF34AiQ6j2t7AqmWfB9kuf7fAZJUTXhNJ3rtIYH0oWb1Mstw0jc6Ka2nAI7PDh0Z4afF2JkuHOZwDmi9fe1Ylgwbdyxu2PafWaM6%2BDelkvY5w2jU%3D",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                }
+            ]
+        },
+        "channelId": 3
+    },
+    "channel4": {
+        "categorysRes": {
+            "success": true,
+            "code": 0,
+            "params": {
+                "ids": [],
+                "needStdCats": false,
+                "pid": "mm_120426991_20642390_70036797",
+                "processor": "CATEGORY_SEARCH"
+            },
+            "data": [
+                {
+                    "id": 5,
+                    "name": "女装",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 23,
+                    "name": "其他",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 22,
+                    "name": "手表 ",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 20,
+                    "name": "宠物/宠物食品及用品",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 19,
+                    "name": "食品",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 18,
+                    "name": "美妆",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 17,
+                    "name": "母婴用品",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 16,
+                    "name": "服饰配件",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 15,
+                    "name": "家居",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 14,
+                    "name": "情趣用品",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 13,
+                    "name": "文玩",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 12,
+                    "name": "汽车",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 11,
+                    "name": "家电",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 10,
+                    "name": "数码",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 9,
+                    "name": "内衣",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 8,
+                    "name": "箱包",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 7,
+                    "name": "鞋类",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 6,
+                    "name": "男装",
+                    "iconUrl": ""
+                },
+                {
+                    "id": 24,
+                    "name": "运动户外",
+                    "iconUrl": ""
+                }
+            ]
+        },
+        "adsRes": {
+            "success": true,
+            "code": 0,
+            "params": {
+                "ids": [
+                    10
+                ],
+                "pid": "mm_120426991_20642390_70036797",
+                "processor": "AD_SEARCH"
+            },
+            "data": [
+                {
+                    "id": 10,
+                    "title": "居家百货",
+                    "type": 0,
+                    "banners": [
+                        {
+                            "id": 17,
+                            "title": "换季收纳",
+                            "picUrl": "http://img.adbaitai.com/cow/2017/03/06/750w_240h_C6FED1488785729_origin.png",
+                            "skipUrl": "topic_promotionId=11&topicId=3&tpl=normal"
+                        },
+                        {
+                            "id": 13,
+                            "title": "厨房整理",
+                            "picUrl": "http://img.adbaitai.com/cow/2017/03/06/750w_240h_553AF1488785549_origin.png",
+                            "skipUrl": "topic_promotionId=11&topicId=4&tpl=normal"
+                        },
+                        {
+                            "id": 15,
+                            "title": "居家日用专场",
+                            "picUrl": "http://img.adbaitai.com/cow/2017/03/06/750w_240h_C03CF1488785619_origin.png"
+                        },
+                        {
+                            "id": 16,
+                            "title": "居家实惠放送",
+                            "picUrl": "http://img.adbaitai.com/cow/2017/03/06/750w_240h_4A67B1488785639_origin.png"
+                        },
+                        {
+                            "id": 17,
+                            "title": "换季收纳",
+                            "picUrl": "http://img.adbaitai.com/cow/2017/03/06/750w_240h_C6FED1488785729_origin.png",
+                            "skipUrl": "topic_promotionId=11&topicId=3&tpl=normal"
+                        }
+                    ]
+                }
+            ]
+        },
+        "itemsByCatRes": {
+            "success": true,
+            "code": 0,
+            "params": {
+                "catIds": [
+                    15
+                ],
+                "offset": 0,
+                "pageSize": 20,
+                "pid": "mm_120426991_20642390_70036797",
+                "processor": "ITEM_SEARCH_BY_CATEGORY"
+            },
+            "data": [
+                {
+                    "id": 41797684534,
+                    "title": "家用全自动血压计测量仪",
+                    "saleCount": 119853,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i4/TB18ysEPVXXXXcOapXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "348",
+                    "price": "98",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE4hAeCDdbPdiOHo3WTNJ3Bm0r%2FKw%2Fq64I%3D",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 39248616302,
+                    "title": "塑料防滑衣架衣挂撑子裤架衣服架",
+                    "saleCount": 101203,
+                    "picUrl": "http://img.adbaitai.com/cow/2017/02/23/300w_300h_BABCB1487833160_origin.jpg",
+                    "originPrice": "12",
+                    "price": "9.9",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE4hAnOtoJ7QXVXKhijgZbrzFf972YS6Ew%3D",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 540019566148,
+                    "title": "家用塑料衣柜内衣收纳盒 内衣裤整理盒",
+                    "saleCount": 100776,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i4/50983440/TB2dyuiamJjpuFjy0FdXXXmoFXa_!!50983440.jpg",
+                    "originPrice": "9.2",
+                    "price": "4.8",
+                    "source": "TB",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF34AiQ6j2t7AqmWfB9kuf7fAZJUTXhNJ3rtIYH0oWb1Mstw0jc6Ka2nAI7PDh0Z4afF2JkuHOZwDmi9bhZAIsOmW8zvdMlYbIB5u4X%2FHS3SIVw%3D%3D",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 35513999285,
+                    "title": "飞科剃毛机毛球修剪器充电式衣服去球器",
+                    "saleCount": 92835,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i2/TB1smZWPVXXXXceXFXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "95",
+                    "price": "29.9",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE9inmUxwe9a3GrlFFdf6%2BZc8avLEP8EA%3D%3D",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 45401950129,
+                    "title": "洗衣袋护洗袋 洗衣机洗衣服网袋细网",
+                    "saleCount": 83279,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i2/762245395/TB2vi6Vc9xjpuFjSszeXXaeMVXa_!!762245395.jpg",
+                    "originPrice": "5",
+                    "price": "3",
+                    "source": "TB",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF34AiQ6j2t7AqmWfB9kuf7fAZJUTXhNJ3rtIYH0oWb1Mstw0jc6Ka2nAI7PDh0Z4afF2JkuHOZwDmi9ZK2V7UuRlcOKY9HLFzzFLXvnH7scNvw%3D%3D",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 520610994728,
+                    "title": "特大号加厚塑料收纳箱 有盖收纳盒整理箱",
+                    "saleCount": 81406,
+                    "picUrl": "http://img2.tbcdn.cn/tfscom/i4/754877917/TB2lIc2nFXXXXbNXXXXXXXXXXXX_!!754877917.jpg",
+                    "originPrice": "40",
+                    "price": "18",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE9idIXyVP2HUL3X7RsM%2BcLMKyFfWCykkA%3D",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 42526050796,
+                    "title": "抽屉式化妆品收纳盒大号创意桌面收纳盒",
+                    "saleCount": 80969,
+                    "picUrl": "http://img1.tbcdn.cn/tfscom/i4/TB14mKBOFXXXXbsXVXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "168",
+                    "price": "24.9",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE7VKiXzn3sFEY0FjVW83X3HQtZenzNdR4%3D",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 531574737157,
+                    "title": "五档淋浴喷头",
+                    "saleCount": 80713,
+                    "picUrl": "http://img4.tbcdn.cn/tfscom/i2/TB1reuKPXXXXXXUapXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "19.8",
+                    "price": "18.8",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE4hl%2B74%2BtlzbXbpJ4ATVFKtjOJ8RMI2ACx",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 530681728889,
+                    "title": "可撕式家居粘尘纸 滚刷吸粘毛去除毛器",
+                    "saleCount": 77321,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i1/TB1oSgYPVXXXXcNXFXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "51",
+                    "price": "11.8",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE4g%2BCwTdt9sE3zBZXPMXs7jikI71GIBQXc",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 38356085472,
+                    "title": "百易特13丝真空压缩袋 满58送电泵",
+                    "saleCount": 77161,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i3/27591261/TB2DBWJdHBkpuFjy1zkXXbSpFXa_!!27591261.jpg",
+                    "originPrice": "25.3",
+                    "price": "9.6",
+                    "source": "TB",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF34AiQ6j2t7AqmWfB9kuf7fAZJUTXhNJ3rtIYH0oWb1Mstw0jc6Ka2nAI7PDh0Z4afF2JkuHOZwDmi9c1SUdn3nmJvAKkKA%2FNZyWmvwO6h4b",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 528726021196,
+                    "title": "女士大容量化妆包 小号便携防水旅行洗漱包",
+                    "saleCount": 74217,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i1/TB1vxNHLpXXXXbPXFXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "58",
+                    "price": "9.9",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE7Wjx%2BRJKcHUk%2FsY2q4Lnfzp9%2FxS%2F3snOt",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 521687853588,
+                    "title": "水槽塑料沥水篮收纳挂篮 厨具置物架沥水架",
+                    "saleCount": 73897,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i2/TB1Hrp9NFXXXXcpaXXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "4.7",
+                    "price": "2.5",
+                    "source": "TB",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF34AiQ6j2t7AqmWfB9kuf7fAZJUTXhNJ3rtIYH0oWb1Mstw0jc6Ka2nAI7PDh0Z4afF2JkuHOZwDmi9bhZAIsOmW8zvdMlYdiwIpDFej5vc69g%3D%3D",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 38645058899,
+                    "title": "创意铁艺门后挂钩 无痕粘钩置物架",
+                    "saleCount": 73359,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i1/TB1ORkwOFXXXXcQaXXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "38",
+                    "price": "6.9",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE4hAaULgs6gHRoh%2B%2FeRSnpqZbXcducspA%3D",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 536726922924,
+                    "title": "家用塑料衣柜内衣收纳盒 文胸袜子整理盒",
+                    "saleCount": 70908,
+                    "picUrl": "http://img.adbaitai.com/cow/2017/02/23/300w_300h_178251487833666_origin.jpg",
+                    "originPrice": "8.8",
+                    "price": "5.9",
+                    "source": "TB",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF34AiQ6j2t7AqmWfB9kuf7fAZJUTXhNJ3rtIYH0oWb1Mstw0jc6Ka2nAI7PDh0Z4afF2JkuHOZwDmi9c0h%2FYqVqll4gokZLm4nl3WiE1bos6cw%3D%3D",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 44805674178,
+                    "title": "透明挂衣袋衣物防尘罩 大衣防尘袋套衣罩",
+                    "saleCount": 69618,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i1/50983440/TB2C.ZRid0opuFjSZFxXXaDNVXa_!!50983440.jpg",
+                    "originPrice": "3.1",
+                    "price": "1.2",
+                    "source": "TB",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF34AiQ6j2t7AqmWfB9kuf7fAZJUTXhNJ3rtIYH0oWb1Mstw0jc6Ka2nAI7PDh0Z4afF2JkuHOZwDmi9bhZAIsOmW8zvdMldnrrhnb8jlzhNd",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 14979303197,
+                    "title": "牛津布收纳箱整理箱 衣柜储物箱棉被袋",
+                    "saleCount": 69166,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i3/TB11MFnPVXXXXaZXXXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "71",
+                    "price": "19.9",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiEym8lW4b4aIFE1UN9oxYuuGLjlV8wMbQ%3D%3D",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 522814567600,
+                    "title": "32cm麦饭石不粘锅炒锅无油烟铁锅",
+                    "saleCount": 68556,
+                    "picUrl": "http://img4.tbcdn.cn/tfscom/i2/1637033965/TB2Zb8woFXXXXbfXXXXXXXXXXXX_!!1637033965.jpg",
+                    "originPrice": "158",
+                    "price": "39",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE7VWK%2FB3cMfNJpx%2BzXVwGCzjEqqMb6MLUF",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 526715087159,
+                    "title": "字帖成人学生钢笔行书凹槽练字帖",
+                    "saleCount": 65923,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i1/2359994582/TB2mikpid4opuFjSZFLXXX8mXXa_!!2359994582.jpg",
+                    "originPrice": "13.5",
+                    "price": "9.9",
+                    "source": "TB",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF34AiQ6j2t7AqmWfB9kuf7fAZJUTXhNJ3rtIYH0oWb1Mstw0jc6Ka2nAI7PDh0Z4afF2JkuHOZwDmi9c0S%2BBA9TYHp5Ar5bbUAqr50h3beEMwHjX",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 540790849058,
+                    "title": "声波电动牙刷",
+                    "saleCount": 60486,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i3/TB1X1h9PpXXXXc0XVXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "199",
+                    "price": "69",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE7VWT0SBa0zp5EAbuIwyoaKXGhC4un%2BgBJ",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                },
+                {
+                    "id": 43646920121,
+                    "title": "食品级蛋糕西点吸油纸烤箱烧烤锡纸10m",
+                    "saleCount": 59844,
+                    "picUrl": "http://img.alicdn.com/bao/uploaded/i1/TB16qHzPVXXXXcraXXXXXXXXXXX_!!0-item_pic.jpg",
+                    "originPrice": "29.8",
+                    "price": "9.8",
+                    "source": "TM",
+                    "status": 1,
+                    "statusText": "在线",
+                    "isNew": false,
+                    "skipUrl": "http://s.click.taobao.com/t?e=zGU0g6e1d7xnyW5i7tVTF31X3gHkCRrpJ4KpxuxuzRREXZDmkX9wz2upQ68mbPUIlIwEozgmRBJVzWWSNDG8HGsa3v3oVfd7KiE7VKHosv3G0lD4Gko2FlNNjEO6gUx%2B7iA%3D",
+                    "isHasActivity": false,
+                    "isPinkage": true,
+                    "isPopular": true
+                }
+            ]
+        },
+        "channelId": 4
+    }
+}
