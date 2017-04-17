@@ -6,12 +6,21 @@
   </div>
 </template>
 <script>
-    import {
+  import {
     mapGetters
   } from 'vuex'
+  import Utils from '@/assets/js/utils'
+
   export default {
-        computed: {
-      ...mapGetters(['appKey', 'adTag']),
+    data() {
+      return {
+        appKey: this.$route.query.appKey,
+        adTag: this.$route.query.adTag,
+      }
+    },
+    mounted() {
+      this.$store.commit('setAppKey', this.appKey);
+      this.$store.commit('setAdTag', this.adTag);
     },
     methods: {
       setHistory(step) {
@@ -26,18 +35,16 @@
         location.reload()
       },
       historyBack(step) {
-        // alert(history.length)
-        if (history.length >= 2) {
-          // this.$router.push('/')
-          console.log(this.appKey,this.adTag)
+        console.log(history.length)
+        if (history.length === 1) {
           this.$router.push({
-              path: '/',
-              query: {
-                appKey: this.appKey,
-                ADTAG: this.adTag
-              }
-            })
-          // this.$router.push('/lg/index.html')
+            path: '/lg/index.html',
+            query: {
+              appKey: this.appKey,
+              ADTAG: this.adTag
+            }
+          })
+
           setTimeout(function () {
             location.reload()
           }, 0);
