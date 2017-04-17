@@ -16,6 +16,7 @@
     "post": "cnpm run postassets & cnpm run postindex"
   },
   "dependencies": {
+    "clipboard": "^1.6.1",
     "vue": "^2.2.1",
     "vue-awesome-swiper": "^2.3.2",
     "vue-infinite-scroll": "^2.0.0",

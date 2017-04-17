@@ -123,6 +123,7 @@
     mounted() {
 
       this.getItemData();
+
     },
     beforeDestroy() {
       this.$store.dispatch('setIsHiddenNav', false)
@@ -166,6 +167,7 @@
           console.log(res)
           this.item = res.data.itemDetailInfoRes.data[0];
           this.guessList = res.data.itemRecommendRes.data[0].itemDTOList;
+          this.$store.dispatch('setTaoKey', this.item.taoKouLing)
 
           // 模拟访问sclick
           // if (!this.isWeiXin) {
@@ -220,8 +222,7 @@
 <style lang="scss" rel="stylesheet/scss">
   $price: #fe2947;
   .page-item-detail {
-    padding-bottom: 0.98rem;
-    //后退
+    padding-bottom: 0.98rem; //后退
     //轮播图
     .item-carousel {
       height: 7.5rem;
@@ -239,8 +240,7 @@
       .swiper-pagination-bullet-active {
         background-color: $price;
       }
-    }
-    //单品信息
+    } //单品信息
     .item-info {
       padding: 0.4rem 0.24rem 0.36rem;
       background-color: #fff;

@@ -148,7 +148,7 @@
         font-size: 0.26rem;
         color: #555;
         line-height: 0.34rem;
-        min-height: 0.81rem;
+        min-height: 0.9rem;
         height: 0.33rem;
         overflow: hidden;
         margin-bottom: 0.24rem;

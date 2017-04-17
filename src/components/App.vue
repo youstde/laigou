@@ -4,10 +4,7 @@
     <BackToTop></BackToTop>
     <router-view keep-alive class="main"></router-view>
     <BottomNav></BottomNav>
-    <div id="cover" @click="hideCover()">
-      <img v-if="isWeiXin === 'ios'" src="../assets/img/cover_ios.png" alt="">
-      <img v-if="isWeiXin === 'android'" src="../assets/img/cover_android.png" alt="">
-    </div>
+    <Cover></Cover>
   </div>
 </template>
 
@@ -17,6 +14,7 @@
   import appNav from '@/components/header/nav'
   import BottomNav from '@/components/router/BottomNav'
   import BackToTop from '@/components/router/BackToTop'
+  import Cover from '@/components/helper/Cover'
 
   export default {
     computed: {
@@ -41,7 +39,8 @@
     components: {
       appNav,
       BottomNav,
-      BackToTop
+      BackToTop,
+      Cover
     },
     watch: {
       serviceData() {

@@ -15,6 +15,7 @@ const state = {
   wxAndroid: false,
   isShowNotice: false,
   isHiddenNav: false,
+  taoKey: '',
   nav: {
     status: true,
     number: 0,
@@ -41,7 +42,8 @@ const getters = {
   category: state => state.category,
   topic: state=> state.topic,
   isWeiXin: state => state.isWeiXin,
-  isHiddenNav: state => state.isHiddenNav
+  isHiddenNav: state => state.isHiddenNav,
+  taoKey: state => state.taoKey  
 };
 
 const mutations =  {
@@ -78,6 +80,9 @@ const mutations =  {
   SET_IS_HIDDEN_NAV(state, payload){
     state.isHiddenNav = payload;
   },
+  SET_TAOKEY(state, payload){
+    state.taoKey = payload;
+  },
 };
 
 const actions = {
@@ -89,6 +94,9 @@ const actions = {
   },
   setIsHiddenNav({commit}, isHidden){
     commit('SET_IS_HIDDEN_NAV', isHidden);
+  },
+  setTaoKey({commit}, taoKey){
+    commit('SET_TAOKEY', taoKey);
   },
 };
 
