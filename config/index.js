@@ -29,8 +29,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/1.0': {
-        // target: 'http://pre.adbaitai.com',
-        target: 'http://192.168.10.229:8080',
+        target: 'http://pre.adbaitai.com',
         changeOrigin: true
       }
     },

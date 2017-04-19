@@ -131,7 +131,7 @@
             MtaH5.clickStat('shouye', {
               'index': 'true'
             })
-            this.$router.push({
+            this.$router.replace({
               path: '/lg/channel_id=' + channelsRes[0].id + '?appKey=' + appKey + '&ADTAG=' + adTag
             })
           }

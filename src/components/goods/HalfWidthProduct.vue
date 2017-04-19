@@ -20,8 +20,8 @@
           <span class="coupon" v-if="product.isHasActivity">券后价</span>
           <span class="price-gray">¥ {{product.originPrice}}</span>
         </p>
+        
       </div>
-
     </a>
   </div>
 
@@ -149,7 +149,6 @@
         color: #555;
         line-height: 0.34rem;
         min-height: 0.9rem;
-        height: 0.33rem;
         overflow: hidden;
         margin-bottom: 0.24rem;
         word-wrap: break-word;

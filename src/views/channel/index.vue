@@ -54,6 +54,8 @@
 	import OutBanner from '@/components/goods/item/OutBanner'
 	import InfiniteLoading from 'vue-infinite-loading'
 	import Utils from '@/assets/js/utils'
+    import changeTitle from '@/assets/js/changeTitle'
+
 	import { mapGetters } from 'vuex'
   export default {
     computed: {

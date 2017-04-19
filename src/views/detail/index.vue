@@ -4,7 +4,7 @@
     <div class="item-detail">
       <div class="item-carousel">
         <swiper :options="swiperOption">
-          <swiper-slide v-for="pic of item.tbImgList" :style="{'backgroundImage':`url(${pic})`}"></swiper-slide>
+          <swiper-slide v-if="item.tbImgList" v-for="pic of item.tbImgList" :style="{'backgroundImage':`url(${pic})`}"></swiper-slide>
           <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
       </div>
@@ -29,7 +29,8 @@
 
     <div class="item-picture" v-if="item.detailInfoList.length>0&&itemToggle==='detail'">
       <div class="">
-        <img v-for="img of item.detailInfoList" :src="img" alt="" width="100%">
+        <img v-for="img of item.detailInfoList" width="100%" class="lazy" v-lazy="img">
+
       </div>
       <!--<span class="open-click" @click="openDetail()">{{ isOpenDetail?'收起图文详情':'查看图文详情' }}</span>-->
     </div>
@@ -121,9 +122,8 @@
       this.$store.dispatch('setIsHiddenNav', true)
     },
     mounted() {
-
       this.getItemData();
-
+      this.getTaoKey();
     },
     beforeDestroy() {
       this.$store.dispatch('setIsHiddenNav', false)
@@ -184,6 +184,26 @@
           //   iframe.addEventListener('load', iframeCallback)
           //   document.body.appendChild(iframe)
           // }
+        })
+      },
+      getTaoKey() {
+        const api = Utils.server() + '/1.0/h5/batch/search'
+        const itemId = this.$route.params.itemId
+        const params = {
+          appKey: appKey,
+          data: Utils.stringify({
+            "taoKouLing": {
+              "itemId": itemId
+            },
+          })
+        };
+
+        this.$http.get(api, {
+          params: params
+        }).then((response) => {
+          const res = JSON.parse(response.body)
+          console.log(res)
+          this.$store.dispatch('setTaoKey', res.data.itemTaoKouLingRes.data.taoKouLing)
         })
       },
       bcClick(id, title, url) {
