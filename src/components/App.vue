@@ -190,14 +190,7 @@
 
       },
       encodeUrl () {
-        let url = window.location.href,
-            isGzh = this.isGzh();
-        if(isGzh) {
-          url = window.location.href.replace('&type=gzh', '');
-        }
-        if(this.checkCode()) {
-          url = window.location.href.replace('code', 'sts');
-        }
+        let url = window.location.href;
         return encodeURIComponent(url);
       },
       getLocalStorage () {
