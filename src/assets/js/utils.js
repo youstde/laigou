@@ -2,10 +2,10 @@ const utils = {
 	server () {
 		const hostname = location.hostname;
 		let server = '';
-		if (hostname === 'adbaitai.com') {
+		if (hostname === 'wx.adbaitai.com') {
 			server = 'https://adbaitai.com';
-		} else if (hostname === 'pre.adbaitai.com') {
-			server = 'https://pre.adbaitai.com';
+		} else if (hostname === 'wxpre.adbaitai.com') {
+			server = 'https://wxpre.adbaitai.com';
 		} else {}
 		console.log('server:' + server);
 		return server;

@@ -189,6 +189,8 @@
       getTaoKey() {
         const api = Utils.server() + '/api/1.0/h5/batch/search'
         const itemId = this.$route.params.itemId
+        const mpOpenId = window.localStorage && window.localStorage.getItem('openId') || ''
+        alert('mpOpenId:' + mpOpenId)
         const params = {
           appKey: appKey,
           data: Utils.stringify({

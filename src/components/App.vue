@@ -311,12 +311,12 @@
       getServiceData() {
         if (this.serviceData.channelsRes) return;
         const _this = this;
-        // this.$http.get('static/service/service_' + this.appKey + '.json?t=' + new Date().getTime()).then((response) => {
-        //   _this.serviceData = response.body;
-        //   this.$store.commit('setChannelData', _this.serviceData);
-        // }, (response) => {});
+        this.$http.get('static/service/service_' + this.appKey + '.json?t=' + new Date().getTime()).then((response) => {
+          _this.serviceData = response.body;
+          this.$store.commit('setChannelData', _this.serviceData);
+        }, (response) => {});
         // mock
-        this.serviceData = require('static/service/service_'+appKey+'.json');
+        // this.serviceData = require('static/service/service_'+appKey+'.json');
       },
       parseNav(nav) {
         nav.forEach((item, index) => {
@@ -352,7 +352,7 @@
           }
         } else {
           // 发送请求
-          const api = Utils.server() + '/1.0/h5/app/home/get?data=&appKey=key_adbaitai';
+          const api = Utils.server() + '/api/1.0/h5/app/home/get?data=&appKey=key_adbaitai';
           this.$http.get(api).then((response) => {
             const result = Utils.parse(response.body);
             if (result.success && result.data) {

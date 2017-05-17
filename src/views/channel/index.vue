@@ -94,12 +94,12 @@
     created () {
       const _this = this;
       this.initConfig();
-      // this.$http.get('static/service/service_' + appKey + '.json?t=' + new Date().getTime()).then((response) => {
-      //   _this.channel = response.body;
-      // }, (response) => {
-      // });
+      this.$http.get('static/service/service_' + appKey + '.json?t=' + new Date().getTime()).then((response) => {
+        _this.channel = response.body;
+      }, (response) => {
+      });
       // mock
-      this.channel = require('static/service/service_'+ appKey +'.json');
+      // this.channel = require('static/service/service_'+ appKey +'.json');
     },
     watch: {
 		  'channel' () {
