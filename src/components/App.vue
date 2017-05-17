@@ -154,6 +154,7 @@
 
       },
       haveStorgeOpenId () {
+          alert('haveStorgeOpenId');
           if(this.isGzh()) {
             alert('gzh')
             // 公众号
