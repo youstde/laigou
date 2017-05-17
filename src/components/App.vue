@@ -121,8 +121,9 @@
               let storage = window.localStorage;
               // alert(JSON.stringify(storage))
               let openId = storage.getItem("openId"),
-                  shareUrl = window.location.href.replace('&type=gzh', '');
-                  shareUrl = shareUrl.replace('code', 'sts');
+                  shareUrl = window.location.href.replace('&type=gzh', ''),
+                  codeObj = Utils.getQueryString(shareUrl, 'code');
+                  shareUrl = shareUrl.replace(codeObj, '');
               // alert('ready')
               wx.onMenuShareTimeline({
                 title: 'test', // 分享标题
