@@ -19,6 +19,7 @@ Vue.use(VueAwesomeSwiper)
 
 Vue.http.options.emulateHTTP = true
 Vue.http.options.emulateJSON = true
+// Vue.http.options.headers = {'x-request-type': 'subscriptions'}
 
 new Vue({
   el: '#app',

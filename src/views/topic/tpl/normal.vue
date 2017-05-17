@@ -91,7 +91,7 @@
       getList () {
         const _server = Utils.server();
         const _this = this,
-          api = _server + '/1.0/h5/batch/search',
+          api = _server + '/api/1.0/h5/batch/search',
           params = {
             appKey: appKey,
             data: Utils.stringify(this.params)
@@ -163,17 +163,3 @@
     }
   }
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -31,7 +31,15 @@ module.exports = {
       '/1.0': {
         target: 'http://pre.adbaitai.com',
         changeOrigin: true
-      }
+      },
+      '/public': {
+        target: 'https://pre.adbaitai.com',
+        changeOrigin: true
+      },
+      '/api': {
+        target: 'https://pre.adbaitai.com',
+        changeOrigin: true
+      },
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README

@@ -145,7 +145,7 @@
         this.isOpenDetail = !this.isOpenDetail;
       },
       getItemData() {
-        const api = Utils.server() + '/1.0/h5/batch/search'
+        const api = Utils.server() + '/api/1.0/h5/batch/search'
         const itemId = this.$route.params.itemId
         const params = {
           appKey: appKey,
@@ -187,7 +187,7 @@
         })
       },
       getTaoKey() {
-        const api = Utils.server() + '/1.0/h5/batch/search'
+        const api = Utils.server() + '/api/1.0/h5/batch/search'
         const itemId = this.$route.params.itemId
         const params = {
           appKey: appKey,

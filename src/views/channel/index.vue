@@ -1,4 +1,4 @@
- <template>
+<template>
 	<div class="page-home">
 		<Carousel v-if="carousel.length > 0" :carousel="carousel"></Carousel>
 		<Banner v-if="banner.length > 0" :banner="banner"></Banner>
@@ -94,18 +94,19 @@
     created () {
       const _this = this;
       this.initConfig();
-      this.$http.get('static/service/service_' + appKey + '.json?t=' + new Date().getTime()).then((response) => {
-        _this.channel = response.body;
-      }, (response) => {
-      });
+      // this.$http.get('static/service/service_' + appKey + '.json?t=' + new Date().getTime()).then((response) => {
+      //   _this.channel = response.body;
+      // }, (response) => {
+      // });
       // mock
-      // this.channel = require('static/service/service_'+ appKey +'.json');
+      this.channel = require('static/service/service_'+ appKey +'.json');
     },
     watch: {
 		  'channel' () {
         this.initView();
       },
       '$route' () {
+        console.log('channel')
 		  	this.initConfig();
 		  	this.initView();
       }
@@ -189,7 +190,7 @@
         }
         const _server = Utils.server();
         const _this = this,
-          api =  _server + '/1.0/h5/batch/search',
+          api =  _server + '/api/1.0/h5/batch/search',
           params = {
             appKey: appKey,
             data: Utils.stringify(p)
@@ -249,7 +250,7 @@
 
 <style lang="scss" scoped>
 	.page-home {
-		margin-top: 0.88rem;
+		margin-top: 1.88rem;
 	}
   .product-list {
     margin-top: 0.2rem;

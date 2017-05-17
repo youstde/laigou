@@ -1,5 +1,6 @@
 <template>
   <div class="nav app-nav">
+    <div class="search-entry" @click="doSearch()" href="javascript:void(0);"></div>
     <!--<div class="notice" v-if="isShowNotice">
       <img v-if="isShowNotice==='ios'" src="../../assets/img/notice_ios.png" width="100%">
       <img v-if="isShowNotice==='android'" src="../../assets/img/notice_android.png" width="100%">
@@ -43,6 +44,15 @@
       this.activeLink = this.$route.path;
     },
     methods: {
+      doSearch () {
+        this.$router.push({
+          name: 'search',
+          query: {
+            appKey: this.appKey,
+            ADTAG: this.adTag
+          }
+        })
+      },
       doLog(name, url) {
         MtaH5.clickStat('Navigation', {
           'n': name
@@ -81,6 +91,13 @@
 <style lang="scss" rel="stylesheet/scss" scoped>
   $pink: #ff2a48;
   $nav-zindex: 1000;
+  .search-entry {
+    width: 100%;
+    height: 1rem;
+    background: #FFF url('//cowcdn.oss-cn-hangzhou.aliyuncs.com/lg/img/search-bg.png') 0 0 no-repeat;
+    background-size: cover;
+    display: block;
+  }
   .nav {
     position: fixed;
     top: 0;

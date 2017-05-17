@@ -15,6 +15,11 @@ const router = new Router({
       path: '/lg/:key',
       component: require('@/components/router/home'),
       name: 'lg'
+    },
+    {
+      path: '/lg/search',
+      component: require('@/views/search/index'),
+      name: 'search'
     }
   ]
 })

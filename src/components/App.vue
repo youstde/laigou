@@ -15,6 +15,7 @@
   import BottomNav from '@/components/router/BottomNav'
   import BackToTop from '@/components/router/BackToTop'
   import Cover from '@/components/helper/Cover'
+  import shl from '@/assets/js/sha'
 
   export default {
     computed: {
@@ -53,10 +54,13 @@
       },
       $route: function () {
         this.getServiceData();
+
       }
     },
     mounted() {
+      // window.location.replace('https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxfa8b4275880355a7&redirect_uri=https%3a%2f%2fwx.adbaitai.com%2fwxpage%2findex.html&response_type=code&scope=snsapi_userinfo#wechat_redirect');
       this.getServiceData();
+      this.haveStorgeOpenId();
     },
     created() {
       // this.getServiceData();
@@ -93,15 +97,226 @@
       }
     },
     methods: {
+      initWXShare () {
+          const api = Utils.server() + '/api/public/weixin/getTickets';
+          this.$http.get(api).then((response) => {
+            const result = response.body;
+            let ticket = result;
+            let noncestr = 'Wm3WZYTPz0wzccnW',
+              timestamp = Date.now(),
+              sturl = window.location.href,
+              stringOne = `jsapi_ticket=${ticket}&noncestr=${noncestr}&timestamp=${timestamp}&url=${sturl}`,
+              signaturett = shl.hex_sha1(stringOne);
+              console.log(signaturett);
+            wx.config({
+              debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+              // appId: 'wxfa8b4275880355a7', // 必填，公众号的唯一标识
+              appId: 'wx45f8103d7afff2a6', // 必填，公众号的唯一标识
+              timestamp: timestamp, // 必填，生成签名的时间戳
+              nonceStr: noncestr, // 必填，生成签名的随机串
+              signature: signaturett,// 必填，签名，见附录1
+              jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo','onMenuShareQZone'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+            });
+            wx.ready(function(){
+              let storage = window.localStorage;
+              // alert(JSON.stringify(storage))
+              let openId = storage.getItem("openId"),
+                  shareUrl = window.location.href.replace('&type=gzh', '');
+              // alert('ready')
+              wx.onMenuShareTimeline({
+                title: 'test', // 分享标题
+                link:  shareUrl + '&openId='+ openId, // 分享链接
+                imgUrl: 'https://static.adbaitai.com/game/Zhaoocha/imgs/zhaochaShareIcon.png', // 分享图标
+                success: function () {
+                    // 用户确认分享后执行的回调函数
+
+                },
+                cancel: function () {
+                    // 用户取消分享后执行的回调函数
+                }
+              });
+              // onMenuShareAppMessage
+              wx.onMenuShareAppMessage({
+                title: 'test', // 分享标题
+                link:  shareUrl + '&openId='+ openId, // 分享链接
+                imgUrl: 'https://static.adbaitai.com/game/Zhaoocha/imgs/zhaochaShareIcon.png', // 分享图标
+                success: function () {
+                    // 用户确认分享后执行的回调函数
+
+                },
+                cancel: function () {
+                    // 用户取消分享后执行的回调函数
+                }
+              });
+            });
+          });
+
+      },
+      haveStorgeOpenId () {
+          if(this.isGzh()) {
+            alert('gzh')
+            // 公众号
+            if(this.checkCode()) {
+              let code = this.getUrlOption(1);
+              this.checkBindSend({
+                  "code": code
+              });
+            }else {
+              this.getLocalStorage();
+            }
+          }
+          if(this.checkOpenId()) {
+            // 分享链接
+            if(!this.checkCode()) {
+              alert(2)
+              this.getLocalStorage();
+            }else {
+              // 带code
+                let optionObj = this.getUrlOption(2);
+                this.checkBindSend({
+                    "code": optionObj.code,
+                    "openId": optionObj.openId
+
+                });
+
+              // this.setLocalStorage();
+            }
+          }
+
+
+      },
+      encodeUrl () {
+        let url = window.location.href;
+            isGzh = this.isGzh();
+        if(isGzh) {
+          url = window.location.href.replace('&type=gzh', '');
+        }
+        return encodeURIComponent(url);
+      },
+      getLocalStorage () {
+        let storage = window.localStorage;
+        // alert(JSON.stringify(storage))
+        let openId = storage.getItem("openId");
+        alert(openId);
+        if(openId) {
+          alert(openId);
+        }else {
+          let url = this.encodeUrl();
+          window.location.replace('https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx45f8103d7afff2a6&redirect_uri='+url+'&response_type=code&scope=snsapi_userinfo#wechat_redirect');
+        }
+      },
+      checkBindSend (params) {
+        const api = Utils.server() + '/api/public/h5/weixin/checkBindAgent';
+       this.$http.get(api, {
+         params: {
+           data: Utils.stringify(params)
+         }
+       }).then(function(response){
+           // 响应成功回调
+           alert(response.body);
+           let data = JSON.parse(response.body);
+           if(data.success){
+             let openId = data.data.openid;
+             alert(openId);
+             window.localStorage.setItem("openId", openId);
+             alert(window.localStorage);
+           }
+       }, function(response){
+           // 响应错误回调
+           alert(response);
+       });
+      },
+      setLocalStorage (openId) {
+        window.localStorage.setItem('openId', openId);
+      },
+      checkCode () {
+        var searchObj =  window.location.search.substr(1),
+            searchArr = searchObj.split('&'),
+            isCode = false;
+        for(var i =0; i< searchArr.length; i++) {
+          if(searchArr[i].indexOf('code')> -1) {
+            isCode = true;
+          }
+        }
+        return isCode;
+      },
+      isGzh () {
+        if (Utils.getQueryString(location.href, 'type') === 'gzh') {
+          return true;
+        }
+        return false;
+        // 判断链接是否是公众号中的
+        // var searchObj =  window.location.search.substr(1),
+        //     searchArr = searchObj.split('&'),
+        //     isgzh = false;
+        // for(var i =0; i< searchArr.length; i++) {
+        //   if(searchArr[i].indexOf('type')> -1) {
+        //     let data = searchArr[i].split('=')[1];
+        //     if(data == 'gzh') {
+        //       isgzh = true;
+        //     }
+        //   }
+        // }
+        // return isgzh;
+      },
+      checkRedirect () {
+        // 是否是重定向的链接
+      },
+      checkOpenId () {
+
+        // var searchObj =  window.location.search.substr(1),
+        //     searchArr = searchObj.split('&'),
+        //     openId = false;
+        // for(var i =0; i< searchArr.length; i++) {
+        //   if(searchArr[i].indexOf('openId')> -1) {
+        //     openId = true;
+        //   }
+        // }
+        // return openId;
+        if (Utils.getQueryString(location.href, 'openId')) {
+          return true;
+        }
+        return false;
+      },
+      getUrlOption (type) {
+        if(type == 1) {
+          return Utils.getQueryString(location.href, 'code');
+        }else {
+          return {
+            code: Utils.getQueryString(location.href, 'code'),
+            openId: Utils.getQueryString(location.href, 'openId')
+          }
+        }
+        // var searchObj =  window.location.search.substr(1),
+        //     searchArr = searchObj.split('&'),
+        //     codeobj = '',
+        //     openId = '';
+        // for(var i =0; i< searchArr.length; i++) {
+        //   if(searchArr[i].indexOf('code')> -1) {
+        //     codeobj = searchArr[i].split('=')[1];
+        //   }
+        //   if(searchArr[i].indexOf('openId')> -1) {
+        //     openId = searchArr[i].split('=')[1];
+        //   }
+        // }
+        // if(type == 1) {
+        //   return codeobj;
+        // }else if(type == 2){
+        //   return {
+        //     code: codeobj,
+        //     openId: openId
+        //   }
+        // }
+      },
       getServiceData() {
         if (this.serviceData.channelsRes) return;
         const _this = this;
-        this.$http.get('static/service/service_' + this.appKey + '.json?t=' + new Date().getTime()).then((response) => {
-          _this.serviceData = response.body;
-          this.$store.commit('setChannelData', _this.serviceData);
-        }, (response) => {});
+        // this.$http.get('static/service/service_' + this.appKey + '.json?t=' + new Date().getTime()).then((response) => {
+        //   _this.serviceData = response.body;
+        //   this.$store.commit('setChannelData', _this.serviceData);
+        // }, (response) => {});
         // mock
-        // this.serviceData = require('static/service/service_'+appKey+'.json');
+        this.serviceData = require('static/service/service_'+appKey+'.json');
       },
       parseNav(nav) {
         nav.forEach((item, index) => {
@@ -148,6 +363,8 @@
             }
           })
         }
+
+        this.initWXShare();
       }
     }
   }
@@ -158,6 +375,8 @@
   #app {
     max-width: 900px;
     margin: 0 auto;
+    height: 100%;
+    min-height: 100%;
     &.is-hidden-nav {
       .app-nav,
       .back-prev {
@@ -173,7 +392,7 @@
   }
 
   .main {
-    margin-top: 0.88rem;
+    margin-top: 1.88rem;
   }
 
   .mt16 {
