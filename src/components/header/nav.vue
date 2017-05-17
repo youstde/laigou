@@ -45,13 +45,24 @@
     },
     methods: {
       doSearch () {
-        this.$router.push({
-          name: 'search',
-          query: {
-            appKey: this.appKey,
-            ADTAG: this.adTag
-          }
-        })
+        if (this.isWeiXin) {
+          window.open(`/lg/search?appKey=${this.appKey}&ADTAG=${this.adTag}`)
+        } else {
+          this.$router.push({
+            name: 'search',
+            query: {
+              appKey: this.appKey,
+              ADTAG: this.adTag
+            }
+          })
+        }
+        // this.$router.push({
+        //   name: 'search',
+        //   query: {
+        //     appKey: this.appKey,
+        //     ADTAG: this.adTag
+        //   }
+        // })
       },
       doLog(name, url) {
         MtaH5.clickStat('Navigation', {

@@ -12,14 +12,14 @@ const router = new Router({
       name: 'itemDetail'
     },
     {
-      path: '/lg/:key',
-      component: require('@/components/router/home'),
-      name: 'lg'
-    },
-    {
       path: '/lg/search',
       component: require('@/views/search/index'),
       name: 'search'
+    },
+    {
+      path: '/lg/:key',
+      component: require('@/components/router/home'),
+      name: 'lg'
     }
   ]
 })
