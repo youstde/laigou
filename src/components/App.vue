@@ -122,6 +122,7 @@
               // alert(JSON.stringify(storage))
               let openId = storage.getItem("openId"),
                   shareUrl = window.location.href.replace('&type=gzh', '');
+                  shareUrl = shareUrl.replace('code', 'sts');
               // alert('ready')
               wx.onMenuShareTimeline({
                 title: 'test', // 分享标题
@@ -157,7 +158,9 @@
             alert('gzh')
             // 公众号
             if(this.checkCode()) {
+              alert('isGzh&&checkCode');
               let code = this.getUrlOption(1);
+              alert('isGzh&&checkCode&&getUrlOption');
               this.checkBindSend({
                   "code": code
               });
@@ -175,7 +178,7 @@
                 let optionObj = this.getUrlOption(2);
                 this.checkBindSend({
                     "code": optionObj.code,
-                    "openId": optionObj.openId
+                    "mpOpenId": optionObj.mpOpenId
 
                 });
 
@@ -186,10 +189,13 @@
 
       },
       encodeUrl () {
-        let url = window.location.href;
+        let url = window.location.href,
             isGzh = this.isGzh();
         if(isGzh) {
           url = window.location.href.replace('&type=gzh', '');
+        }
+        if(this.checkCode()) {
+          url = window.location.href.replace('code', 'sts');
         }
         return encodeURIComponent(url);
       },
@@ -197,12 +203,15 @@
         let storage = window.localStorage;
         // alert(JSON.stringify(storage))
         let openId = storage.getItem("openId");
-        alert(openId);
+        alert('openId');
         if(openId) {
           alert(openId);
+
         }else {
           let url = this.encodeUrl();
+          // alert(url);
           window.location.replace('https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx45f8103d7afff2a6&redirect_uri='+url+'&response_type=code&scope=snsapi_userinfo#wechat_redirect');
+
         }
       },
       checkBindSend (params) {
@@ -216,7 +225,7 @@
            alert(response.body);
            let data = JSON.parse(response.body);
            if(data.success){
-             let openId = data.data.openid;
+             let openId = data.data.mpOpenId;
              alert(openId);
              window.localStorage.setItem("openId", openId);
              alert(window.localStorage);
@@ -284,7 +293,7 @@
         }else {
           return {
             code: Utils.getQueryString(location.href, 'code'),
-            openId: Utils.getQueryString(location.href, 'openId')
+            mpOpenId: Utils.getQueryString(location.href, 'openId')
           }
         }
         // var searchObj =  window.location.search.substr(1),

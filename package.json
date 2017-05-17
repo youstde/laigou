@@ -11,8 +11,8 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
-    "postassets": "scp -r ./lg/static/assets admin@101.37.22.66:/home/admin/lgweb/lg/static/",
-    "postindex": "scp -r ./lg/index.html admin@101.37.22.66:/home/admin/lgweb/lg",
+    "postassets": "scp -r ./lg/static/assets admin@101.37.77.179:/home/admin/lgweb/lg/static/",
+    "postindex": "scp -r ./lg/index.html admin@101.37.77.179:/home/admin/lgweb/lg",
     "post": "cnpm run postassets & cnpm run postindex"
   },
   "dependencies": {
