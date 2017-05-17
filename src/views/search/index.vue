@@ -70,16 +70,27 @@
         showLoading: false
       }
     },
+    computed: {
+      isWeiXin() {
+        return this.$store.state.isWeiXin
+      }
+    },
     watch: {
-
+      '$route': function () {
+        console.log('kdkdkdkdk')
+        this.requestHotKeyWord();
+        this.setSearchHistory();
+      }
     },
     mounted () {
+      console.log(9000)
       this.requestHotKeyWord();
       this.setSearchHistory();
     },
     methods: {
       // 加载热门搜索
       requestHotKeyWord () {
+        console.log(111)
         const self = this;
         this.$http.get('/api/public/1.0/h5/weixin/hot?data=')
           .then((response) => {

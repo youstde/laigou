@@ -29,15 +29,15 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/1.0': {
-        target: 'http://pre.adbaitai.com',
+        target: 'http://wxpre.adbaitai.com',
         changeOrigin: true
       },
       '/public': {
-        target: 'https://pre.adbaitai.com',
+        target: 'https://wxpre.adbaitai.com',
         changeOrigin: true
       },
       '/api': {
-        target: 'https://pre.adbaitai.com',
+        target: 'https://wxpre.adbaitai.com',
         changeOrigin: true
       },
     },

@@ -96,8 +96,7 @@
       this.initConfig();
       this.$http.get('static/service/service_' + appKey + '.json?t=' + new Date().getTime()).then((response) => {
         _this.channel = response.body;
-      }, (response) => {
-      });
+      }, (response) => {});
       // mock
       // this.channel = require('static/service/service_'+ appKey +'.json');
     },

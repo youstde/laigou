@@ -190,9 +190,10 @@
         const api = Utils.server() + '/api/1.0/h5/batch/search'
         const itemId = this.$route.params.itemId
         const mpOpenId = window.localStorage && window.localStorage.getItem('openId') || ''
-        alert('mpOpenId:' + mpOpenId)
+        console.log('mpOpenId:' + mpOpenId)
         const params = {
           appKey: appKey,
+          mpOpenId: mpOpenId,
           data: Utils.stringify({
             "taoKouLing": {
               "itemId": itemId
