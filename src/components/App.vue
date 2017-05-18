@@ -194,15 +194,14 @@
         return encodeURIComponent(url);
       },
       getLocalStorage (type) {
-        if(type == 1) {
-          let url = this.encodeUrl();
-          window.location.replace('https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx45f8103d7afff2a6&redirect_uri='+url+'&response_type=code&scope=snsapi_userinfo#wechat_redirect');
-        }
         let storage = window.localStorage;
         // alert(JSON.stringify(storage))
         let openId = storage.getItem("openId");
         if(openId) {
-
+          this.checkBindSend({
+            "selfMpOpenId": openId,
+            "mpOpenId": Utils.getQueryString(location.href, 'openId')
+          });
           // alert(openId);
 
         }else {
