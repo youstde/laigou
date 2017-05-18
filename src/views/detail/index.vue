@@ -164,7 +164,7 @@
           params: params
         }).then((response) => {
           const res = JSON.parse(response.body)
-          console.log(res)
+          console.log(res);
           this.item = res.data.itemDetailInfoRes.data[0];
           this.guessList = res.data.itemRecommendRes.data[0].itemDTOList;
           this.$store.dispatch('setTaoKey', this.item.taoKouLing)
@@ -190,7 +190,7 @@
         const api = Utils.server() + '/api/1.0/h5/batch/search'
         const itemId = this.$route.params.itemId
         const mpOpenId = window.localStorage && window.localStorage.getItem('openId') || ''
-        console.log('mpOpenId:' + mpOpenId)
+        // alert('mpOpenId:' + mpOpenId);
         const params = {
           appKey: appKey,
           mpOpenId: mpOpenId,

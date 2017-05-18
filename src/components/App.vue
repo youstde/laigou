@@ -54,7 +54,7 @@
       },
       $route: function () {
         this.getServiceData();
-
+        this.initWXShare();
       }
     },
     mounted() {
@@ -98,6 +98,7 @@
     },
     methods: {
       initWXShare () {
+          let This = this;
           const api = Utils.server() + '/api/public/weixin/getTickets';
           this.$http.get(api).then((response) => {
             const result = response.body;
@@ -107,9 +108,8 @@
               sturl = window.location.href,
               stringOne = `jsapi_ticket=${ticket}&noncestr=${noncestr}&timestamp=${timestamp}&url=${sturl}`,
               signaturett = shl.hex_sha1(stringOne);
-              console.log(signaturett);
             wx.config({
-              debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+              debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
               // appId: 'wxfa8b4275880355a7', // 必填，公众号的唯一标识
               appId: 'wx45f8103d7afff2a6', // 必填，公众号的唯一标识
               timestamp: timestamp, // 必填，生成签名的时间戳
@@ -122,8 +122,9 @@
               // alert(JSON.stringify(storage))
               let openId = storage.getItem("openId"),
                   shareUrl = window.location.href.replace('&type=gzh', ''),
-                  codeObj = Utils.getQueryString(shareUrl, 'code');
-                  shareUrl = shareUrl.replace(codeObj, '');
+                  codeObj = Utils.getQueryString(shareUrl, 'code'),
+                  newCodeObj = '&code=' + codeObj;
+                  shareUrl = shareUrl.replace(newCodeObj, '');
               // alert('ready')
               wx.onMenuShareTimeline({
                 title: 'test', // 分享标题
@@ -131,7 +132,6 @@
                 imgUrl: 'https://static.adbaitai.com/game/Zhaoocha/imgs/zhaochaShareIcon.png', // 分享图标
                 success: function () {
                     // 用户确认分享后执行的回调函数
-
                 },
                 cancel: function () {
                     // 用户取消分享后执行的回调函数
@@ -155,14 +155,13 @@
 
       },
       haveStorgeOpenId () {
-          alert('haveStorgeOpenId');
           if(this.isGzh()) {
-            alert('gzh')
+            // alert('gzh')
             // 公众号
             if(this.checkCode()) {
-              alert('isGzh&&checkCode');
+              // alert('isGzh&&checkCode');
               let code = this.getUrlOption(1);
-              alert('isGzh&&checkCode&&getUrlOption');
+              // alert('isGzh&&checkCode&&getUrlOption');
               this.checkBindSend({
                   "code": code
               });
@@ -173,8 +172,8 @@
           if(this.checkOpenId()) {
             // 分享链接
             if(!this.checkCode()) {
-              alert(2)
-              this.getLocalStorage();
+              // alert(2)
+              this.getLocalStorage(1);
             }else {
               // 带code
                 let optionObj = this.getUrlOption(2);
@@ -194,13 +193,17 @@
         let url = window.location.href;
         return encodeURIComponent(url);
       },
-      getLocalStorage () {
+      getLocalStorage (type) {
+        if(type == 1) {
+          let url = this.encodeUrl();
+          window.location.replace('https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx45f8103d7afff2a6&redirect_uri='+url+'&response_type=code&scope=snsapi_userinfo#wechat_redirect');
+        }
         let storage = window.localStorage;
         // alert(JSON.stringify(storage))
         let openId = storage.getItem("openId");
-        alert('openId');
         if(openId) {
-          alert(openId);
+
+          // alert(openId);
 
         }else {
           let url = this.encodeUrl();
@@ -217,13 +220,11 @@
          }
        }).then(function(response){
            // 响应成功回调
-           alert(response.body);
+          //  alert(response.body);
            let data = JSON.parse(response.body);
            if(data.success){
              let openId = data.data.mpOpenId;
-             alert(openId);
              window.localStorage.setItem("openId", openId);
-             alert(window.localStorage);
            }
        }, function(response){
            // 响应错误回调
