@@ -123,7 +123,6 @@
     },
     mounted() {
       this.getItemData();
-      this.getTaoKey();
     },
     beforeDestroy() {
       this.$store.dispatch('setIsHiddenNav', false)
@@ -168,7 +167,7 @@
           this.item = res.data.itemDetailInfoRes.data[0];
           this.guessList = res.data.itemRecommendRes.data[0].itemDTOList;
           this.$store.dispatch('setTaoKey', this.item.taoKouLing)
-
+          this.getTaoKey();
           // 模拟访问sclick
           // if (!this.isWeiXin) {
           //   var iframe = document.createElement('iframe')
