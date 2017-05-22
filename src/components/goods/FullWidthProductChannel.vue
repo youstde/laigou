@@ -203,7 +203,7 @@
       }
       .get-now {
         font-size: 0.28rem;
-        color: $pink;
+        // color: $pink;
         width: 1.30rem;
         height: 0.50rem;
         position: absolute;

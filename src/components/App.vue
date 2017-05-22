@@ -111,7 +111,7 @@
             wx.config({
               debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
               // appId: 'wxfa8b4275880355a7', // 必填，公众号的唯一标识
-              appId: 'wx45f8103d7afff2a6', // 必填，公众号的唯一标识
+              appId: 'wxfa8b4275880355a7', // 必填，公众号的唯一标识
               timestamp: timestamp, // 必填，生成签名的时间戳
               nonceStr: noncestr, // 必填，生成签名的随机串
               signature: signaturett,// 必填，签名，见附录1
@@ -127,9 +127,9 @@
                   shareUrl = shareUrl.replace(newCodeObj, '');
               // alert('ready')
               wx.onMenuShareTimeline({
-                title: 'test', // 分享标题
+                title: '分享好货优惠券', // 分享标题
                 link:  shareUrl + '&openId='+ openId, // 分享链接
-                imgUrl: 'https://static.adbaitai.com/game/Zhaoocha/imgs/zhaochaShareIcon.png', // 分享图标
+                imgUrl: 'https://static.adbaitai.com/Website/Img/lgShareIcon.png', // 分享图标
                 success: function () {
                     // 用户确认分享后执行的回调函数
                 },
@@ -139,9 +139,9 @@
               });
               // onMenuShareAppMessage
               wx.onMenuShareAppMessage({
-                title: 'test', // 分享标题
+                title: '分享好货优惠券', // 分享标题
                 link:  shareUrl + '&openId='+ openId, // 分享链接
-                imgUrl: 'https://static.adbaitai.com/game/Zhaoocha/imgs/zhaochaShareIcon.png', // 分享图标
+                imgUrl: 'https://static.adbaitai.com/Website/Img/lgShareIcon.png', // 分享图标
                 success: function () {
                     // 用户确认分享后执行的回调函数
 
@@ -180,7 +180,6 @@
                 this.checkBindSend({
                     "code": optionObj.code,
                     "mpOpenId": optionObj.mpOpenId
-
                 });
 
               // this.setLocalStorage();
@@ -207,7 +206,7 @@
         }else {
           let url = this.encodeUrl();
           // alert(url);
-          window.location.replace('https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx45f8103d7afff2a6&redirect_uri='+url+'&response_type=code&scope=snsapi_userinfo#wechat_redirect');
+          window.location.replace('https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxfa8b4275880355a7&redirect_uri='+url+'&response_type=code&scope=snsapi_userinfo#wechat_redirect');
 
         }
       },

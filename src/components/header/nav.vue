@@ -13,7 +13,7 @@
       </svg>
     </div>-->
     <nav>
-      <a @click="doLog(item.name, item.url)" v-for="item in nav.data" :key="item.name" :class="{'router-link-active': activeLink.includes(item.url)}">{{item.name}}</a>
+      <a @click="doLog(item.name, item.url)" v-for="item in nav.data" :key="item.name" :class="{'router-link-active': activeLink === item.url}">{{item.name}}</a>
     </nav>
   </div>
 </template>
